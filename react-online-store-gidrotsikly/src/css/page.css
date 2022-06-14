@@ -1,0 +1,25 @@
+/* .wrapper{
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.containerM{
+	max-width: 1229px;
+	padding: 0px 15px;
+	margin: 0px auto;
+}
+.titleM{
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	color: #868585;
+	margin-bottom: 60px;
+}
+
+@media (max-width: 909px){
+	.titleM{
+		margin-bottom: 40px;
+		text-align: center;
+	}
+} */
