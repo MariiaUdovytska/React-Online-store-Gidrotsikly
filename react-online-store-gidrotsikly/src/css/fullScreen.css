@@ -1,0 +1,5 @@
+.full-screen{
+	display: flex;
+	flex-direction: column;
+}
+.full-screen__body{}

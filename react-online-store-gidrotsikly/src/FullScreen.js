@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/fullScreen.css';
+import {Button} from 'react-bootstrap';
 
 
 
@@ -10,8 +11,11 @@ class FullScreen extends React.Component {
 	}
 	render(){
 		return(
-			<section className='fullScreen containerM'>
+			<section className='full-screen containerM'>
+				<div className='.full-screen__body'>
 				test test test
+					<Button variant='primary'>test</Button>
+				</div>
 			</section>
 		)
 	}

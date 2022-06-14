@@ -1,4 +1,5 @@
 import './css/page.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import FullScreen from './FullScreen';
 
 function App() {
