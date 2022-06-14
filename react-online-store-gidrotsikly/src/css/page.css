@@ -1,4 +1,4 @@
-/* .wrapper{
+.wrapper{
 	min-height: 100vh;
 	overflow: hidden;
 	display: flex;
@@ -6,11 +6,11 @@
 }
 
 .containerM{
-	max-width: 1229px;
+	max-width: 1201px;
 	padding: 0px 15px;
 	margin: 0px auto;
 }
-.titleM{
+/* .titleM{
 	font-size: 1.7rem;
 	text-transform: uppercase;
 	color: #868585;

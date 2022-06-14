@@ -1,9 +1,12 @@
 import './css/page.css';
+import FullScreen from './FullScreen';
 
 function App() {
 	return (
 		<div className="wrapper">
-			<div className='page'> test test test</div>
+			<div className='page'>
+				<FullScreen/>
+			</div>
 		</div>
 	);
 }
