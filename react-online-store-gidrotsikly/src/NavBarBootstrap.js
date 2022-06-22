@@ -20,7 +20,6 @@ class NavBarBootstrap extends React.Component {
 			<div className='nav-bar containerM'>
 				<Navbar collapseOnSelect expand="lg" variant="light" onToggle={this.listenerToggle}>
 					<Container>
-						
 						<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 						{this.state.expendedM === true ?<Navbar.Brand href="#home">logo Center</Navbar.Brand> : ''}
 						<Navbar.Collapse id="responsive-navbar-nav">

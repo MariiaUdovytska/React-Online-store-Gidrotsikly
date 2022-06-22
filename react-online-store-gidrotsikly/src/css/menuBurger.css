@@ -1,11 +1,11 @@
 .nav-bar{
-	
 }
 .container{
 	max-width: 1171px;
 }
 .navbar > .container{
 	padding: 0px 0px;
+	justify-content: unset!important;
 }
 .navbar-expand .navbar-collapse{
 	justify-content: space-between;
@@ -17,7 +17,6 @@
 	font-weight: 700;
 	font-size: 1.42rem;
 }
-
 .navbar-nav .nav-link:hover{
 	color: #858484!important;
 }
@@ -107,6 +106,22 @@
 }
 
 
+.nav-bar-phone{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav-bar-phone__burger{
+	/* max-width:100px; */
+}
+.nav-bar__items-right-a-phone{
+	align-self: flex-start;
+	
+}
+
+
 .nav-bar__navproducts{
 	height: 53px;
 	background-color: #F0F0F4;
@@ -121,9 +136,8 @@
 	padding-left: 0px;
 	margin-bottom: 0px;
 }
-.nav-bar__navproducts-items{
-	font-weight: 400;
-	font-size: 1.42rem;
+.nav-bar__navproducts-item a{
+	color: #2F3035!important;
 }
 .nav-bar__navproducts-items{
 	font-weight: 400;
@@ -141,4 +155,20 @@
 	height: 3px;
 	width: 100%;
 	background-color: #1C62CD;
+}
+
+
+.nav-bar__items-brand-phone{
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.48rem;
+}
+
+.nav-bar__items-right-phone{
+	flex-direction: row;
+	align-self: flex-start;
+}
+.nav-bar__items-right-phone .nav-link{
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }

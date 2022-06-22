@@ -8,7 +8,7 @@ class MenuBurger extends React.Component {
 		super(props);
 		this.state = {
 			expendedM: false,
-			sizeWidth: true
+			sizeWidth: true,
 		}
 	}
 
@@ -25,6 +25,7 @@ class MenuBurger extends React.Component {
 	}
 
 	componentDidMount() {
+		this.handleWindowDimensions();
 		window.addEventListener('resize', this.handleWindowDimensions);
 	}
 
@@ -52,7 +53,7 @@ class MenuBurger extends React.Component {
 								</Nav>
 							</Navbar.Collapse>
 							<Nav className="nav-bar__items-right">
-								<Nav.Link href="#" className='nav-bar__items-right-a'> <i className="bi bi-heart" style={{ display: 'inline-flex', fontSize: '20px', color: '#2F3035'}}></i></Nav.Link>
+								<Nav.Link href="#" className='nav-bar__items-right-a'><i className="bi bi-heart" style={{ display: 'inline-flex', fontSize: '20px', color: '#2F3035'}}></i></Nav.Link>
 								<Nav.Link href="#" className='nav-bar__items-right-a'><i className="bi bi-person-fill" style={{ display: 'inline-flex', fontSize: '24px', color: '#2F3035'}}></i></Nav.Link>
 								<Nav.Link href="#" className='nav-bar__items-right-a'><i className="bi bi-cart2" style={{ display: 'inline-flex', fontSize: '22px', color: '#2F3035'}}></i></Nav.Link>
 							</Nav>
@@ -60,22 +61,45 @@ class MenuBurger extends React.Component {
 					</Navbar>
 					<div className='nav-bar__navproducts'>
 						<ul className='nav-bar__navproducts-item'>
-							<li className='nav-bar__navproducts-items'>Квадроциклы</li>
-							<li className='nav-bar__navproducts-items'>Катера</li>
-							<li className='nav-bar__navproducts-items nav-bar__navproducts-items-active'>Гидроциклы</li>
-							<li className='nav-bar__navproducts-items'>Лодки</li>
-							<li className='nav-bar__navproducts-items'>Вездеходы</li>
-							<li className='nav-bar__navproducts-items'>Снегоходы</li>
-							<li className='nav-bar__navproducts-items'>Двигатели</li>
-							<li className='nav-bar__navproducts-items'>Запчасти</li>
+							<li className='nav-bar__navproducts-items'><a href="#">Квадроциклы</a></li>
+							<li className='nav-bar__navproducts-items'><a href="#">Катера</a></li>
+							<li className='nav-bar__navproducts-items nav-bar__navproducts-items-active'><a href="#">Гидроциклы</a></li>
+							<li className='nav-bar__navproducts-items'><a href="#">Лодки</a></li>
+							<li className='nav-bar__navproducts-items'><a href="#">Вездеходы</a></li>
+							<li className='nav-bar__navproducts-items'><a href="#">Снегоходы</a></li>
+							<li className='nav-bar__navproducts-items'><a href="#">Двигатели</a></li>
+							<li className='nav-bar__navproducts-items'><a href="#">Запчасти</a></li>
 						</ul>
 					</div>
-			</div>
+				</div>
 			)
 		} else {
 			return(
-				<div className='nav-bar containerM'>
-					notttttttt
+				<div className='nav-bar-phone'>
+					<div className='nav-bar-phone__burger'>
+						<Navbar collapseOnSelect expand={false} onToggle={this.listenerToggle}>
+							<Container>
+								<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+								<Navbar.Brand className='nav-bar__items-brand-phone' href="#home">DRIVE MOTO</Navbar.Brand>
+								<Navbar.Collapse id="responsive-navbar-nav">
+									<Nav className='nav-bar__items-left'>
+										<Nav.Link className='nav-bar__items-a' href="#">Магазины</Nav.Link>
+										<Nav.Link className='nav-bar__items-a' href="#">Акции</Nav.Link>
+										<Nav.Link className='nav-bar__items-a' href="#">Доставка и оплата</Nav.Link>
+									</Nav>
+									<Nav className='nav-bar__items-adress'>
+										<Nav.Link className='nav-bar__items-adress-a' href="#"><i className="bi bi-geo-alt" style={{ display: 'inline-flex', fontSize: '30px', color: '#2F3035'}}></i>Город,  ул. Адрес  25</Nav.Link>
+									</Nav>
+								</Navbar.Collapse>
+							</Container>
+						</Navbar>
+					</div>
+					
+					<Nav className="nav-bar__items-right-phone">
+						<Nav.Link href="#" className='nav-bar__items-right-a' ><i className="bi bi-heart " style={{ fontSize: '20px', color: '#2F3035'}}></i></Nav.Link>
+						<Nav.Link href="#" className='nav-bar__items-right-a'><i className="bi bi-person-fill " style={{ fontSize: '24px', color: '#2F3035'}}></i></Nav.Link>
+						<Nav.Link href="#" className='nav-bar__items-right-a'><i className="bi bi-cart2 " style={{ fontSize: '22px', color: '#2F3035'}}></i></Nav.Link>
+					</Nav>
 				</div>
 			)
 		}
