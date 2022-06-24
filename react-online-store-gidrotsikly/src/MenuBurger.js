@@ -80,25 +80,25 @@ class MenuBurger extends React.Component {
 						<Navbar collapseOnSelect expand={false} onToggle={this.listenerToggle}>
 							<Container>
 								<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-								<Navbar.Brand className='nav-bar__items-brand-phone' href="#home">DRIVE MOTO</Navbar.Brand>
+								<Navbar.Brand className='nav-bar-phone__items-brand' href="#home">DRIVE MOTO</Navbar.Brand>
 								<Navbar.Collapse id="responsive-navbar-nav">
-									<Nav className='nav-bar__items-left'>
-										<Nav.Link className='nav-bar__items-a' href="#">Магазины</Nav.Link>
-										<Nav.Link className='nav-bar__items-a' href="#">Акции</Nav.Link>
-										<Nav.Link className='nav-bar__items-a' href="#">Доставка и оплата</Nav.Link>
+									<Nav>
+										<Nav.Link className='nav-bar-phone__items-a' href="#">Магазины</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#">Акции</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#">Доставка и оплата</Nav.Link>
 									</Nav>
-									<Nav className='nav-bar__items-adress'>
-										<Nav.Link className='nav-bar__items-adress-a' href="#"><i className="bi bi-geo-alt" style={{ display: 'inline-flex', fontSize: '30px', color: '#2F3035'}}></i>Город,  ул. Адрес  25</Nav.Link>
+									<Nav className='nav-bar-phone__items-adress'>
+										<Nav.Link href="#"><i className="bi bi-geo-alt" style={{ display: 'inline-flex', fontSize: '30px', color: '#2F3035'}}></i>Город,  ул. Адрес  25</Nav.Link>
 									</Nav>
 								</Navbar.Collapse>
 							</Container>
 						</Navbar>
 					</div>
 					
-					<Nav className="nav-bar__items-right-phone">
-						<Nav.Link href="#" className='nav-bar__items-right-a' ><i className="bi bi-heart " style={{ fontSize: '20px', color: '#2F3035'}}></i></Nav.Link>
-						<Nav.Link href="#" className='nav-bar__items-right-a'><i className="bi bi-person-fill " style={{ fontSize: '24px', color: '#2F3035'}}></i></Nav.Link>
-						<Nav.Link href="#" className='nav-bar__items-right-a'><i className="bi bi-cart2 " style={{ fontSize: '22px', color: '#2F3035'}}></i></Nav.Link>
+					<Nav className="nav-bar-phone__items-right">
+						<Nav.Link href="#" className='nav-bar-phone__items-right-a' ><i className="bi bi-heart " style={{ fontSize: '20px', color: '#2F3035'}}></i></Nav.Link>
+						<Nav.Link href="#" className='nav-bar-phone__items-right-a'><i className="bi bi-person-fill " style={{ fontSize: '24px', color: '#2F3035'}}></i></Nav.Link>
+						<Nav.Link href="#" className='nav-bar-phone__items-right-a'><i className="bi bi-cart2 " style={{ fontSize: '22px', color: '#2F3035'}}></i></Nav.Link>
 					</Nav>
 				</div>
 			)
