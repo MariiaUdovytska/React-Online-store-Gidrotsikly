@@ -83,9 +83,20 @@ class MenuBurger extends React.Component {
 								<Navbar.Brand className='nav-bar-phone__items-brand' href="#home">DRIVE MOTO</Navbar.Brand>
 								<Navbar.Collapse id="responsive-navbar-nav">
 									<Nav>
-										<Nav.Link className='nav-bar-phone__items-a' href="#">Магазины</Nav.Link>
-										<Nav.Link className='nav-bar-phone__items-a' href="#">Акции</Nav.Link>
-										<Nav.Link className='nav-bar-phone__items-a' href="#">Доставка и оплата</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-person-fill" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Войти</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-person-fill" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Регистрация</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-heart" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Избранное</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-cart2" style={{ display: 'inline-flex', paddingRight: '23px',fontSize: '17px', color: '#2F3035'}}></i>Корзина</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-house-door"  style={{ display: 'inline-flex', paddingRight: '23px',fontSize: '17px', color: '#2F3035'}}></i>Магазины</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i class="bi bi-percent" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Акции</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i class="bi bi-box2" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Доставка и оплата</Nav.Link>
+										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Квадроциклы</Nav.Link>
+										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Катера</Nav.Link>
+										<Nav.Link className='nav-bar-phone__navproducts-items nav-bar-phone__navproducts-items-active' href="#">Гидроциклы</Nav.Link>
+										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Вездеходы</Nav.Link>
+										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Снегоходы</Nav.Link>
+										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Двигатели</Nav.Link>
+										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Запчасти</Nav.Link>
 									</Nav>
 									<Nav className='nav-bar-phone__items-adress'>
 										<Nav.Link href="#"><i className="bi bi-geo-alt" style={{ display: 'inline-flex', fontSize: '30px', color: '#2F3035'}}></i>Город,  ул. Адрес  25</Nav.Link>

@@ -11,7 +11,7 @@
 	justify-content: space-between;
 }
 .navbar-nav .nav-link{
-	color: #2F3035!important;
+	color: #212225!important;
 	display: flex;
 	align-items: center;
 	font-weight: 700;
@@ -102,6 +102,11 @@
 	}
 	.nav-bar__navproducts-item .nav-bar__navproducts-items{
 		font-size: 1.1rem;
+	}
+}
+@media(max-width: 678px){
+	.navbar-nav .nav-link{
+		font-weight: 400;
 	}
 }
 
@@ -195,4 +200,10 @@
 .nav-bar-phone__items-right .nav-link{
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
+}
+.nav-bar-phone__navproducts-items{
+	padding-left: 40px!important;
+}
+.nav-bar-phone__navproducts-items-active{
+	font-weight: 600!important;
 }
