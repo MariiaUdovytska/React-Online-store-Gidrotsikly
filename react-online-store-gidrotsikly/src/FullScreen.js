@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/fullScreen.css';
 import MenuBurger from './MenuBurger';
-import NavBarBootstrap from './NavBarBootstrap';
+import VisualHeader from './VisualHeader';
 
 
 class FullScreen extends React.Component {
@@ -13,7 +13,7 @@ class FullScreen extends React.Component {
 			<section className='full-screen containerM'>
 				<div className='full-screen__body'>
 					<MenuBurger/>
-					testtttttt
+					<VisualHeader/>
 				</div>
 			</section>
 		)

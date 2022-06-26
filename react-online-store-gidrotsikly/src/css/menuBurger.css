@@ -197,6 +197,10 @@
 	flex-wrap: nowrap;
 	padding-top: 6px;
 }
+.nav-bar-phone__items-right-a:hover{
+	transition: all 1s ease;
+	transform: scale(1.2);
+}
 .nav-bar-phone__items-right .nav-link{
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
