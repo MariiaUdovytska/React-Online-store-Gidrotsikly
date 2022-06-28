@@ -7,6 +7,14 @@
 	flex: 1 1 75.83%;
 	padding: 0px 18px;
 }
+
+.carousel-indicators [data-bs-target]{
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+}
+
+
 .full-screen__body-banner-advertising{
 	flex: 1 1 24.17%;
 	padding: 0px 18px;
@@ -17,7 +25,6 @@
 	height: 100%;
 	border: 1px solid #CDCDCD;
 }
-
 .full-screen__body-banner-advertising-up{
 	flex: 1 1 auto;
 	position: relative;
