@@ -5,7 +5,7 @@ import banner1 from './img/carouselHeader/banner1.jpg';
 import banner2 from './img/carouselHeader/banner2.jpg';
 import banner3 from './img/carouselHeader/banner3.jpg';
 import banner4 from './img/carouselHeader/banner4.jpg';
-import advertisingMotor from './img/advertising/advertisingMotor.jpg';
+import advertisingMotor from './img/advertising/advertisingMotor.svg';
 
 
 class VisualHeader extends React.Component {
@@ -36,16 +36,16 @@ class VisualHeader extends React.Component {
 					<div className='full-screen__body-banner-advertising-body'>
 						<div className='full-screen__body-banner-advertising-up'>
 							<div className='full-screen__body-banner-advertising-up-price'>
-								<div>
-									<span className='full-screen__body-banner-advertising-up-span'>акция</span>
+								<div className='full-screen__body-banner-advertising-up-stock'>
+									<span>акция</span>
 								</div>
-								<div>
+								<div className='full-screen__body-banner-advertising-up-prices'>
 									<span>1 000 $</span>
 									<span>1 200 $</span>
 								</div>
 							</div>
 							
-							<figure className='full-screen__body-banner-advertising-up'>
+							<figure>
 								<img src={advertisingMotor} alt="motor"></img>
 								<figcaption>Лодочный мотор <br/>Suzuki DF9.9BRS</figcaption>
 							</figure>
