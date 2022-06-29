@@ -70,6 +70,9 @@
 	outline: solid 1.5px #84b3f8;
 	transition: outline 0.3s ease-in-out;
 }
+.search__body-btn-phone{
+	display: none;
+}
 
 @media(max-width:719px){
 	.search__body-item{
@@ -81,6 +84,17 @@
 	}
 	.search__body-items{
 		padding: 6px 13px;
+	}
+	.search__body-btn{
+		display: none;
+	}
+	.search__body-btn-phone{
+		display: block;
+		padding: 11px;
+	}
+	.bi-search:hover::before{
+		transform: scale(1.1);
+		transition: all 0.3s ease-in-out;
 	}
 }
 

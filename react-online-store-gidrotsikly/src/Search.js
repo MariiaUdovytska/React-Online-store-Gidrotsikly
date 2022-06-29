@@ -33,6 +33,7 @@ class Search extends React.Component {
 					<div className='search__body-inputbtn'>
 						<input className='search__body-input' type={inputType} placeholder='Введите...' aria-label='Number'/>
 						<button className='search__body-btn' type='submit'>искать</button>
+						<button className='search__body-btn-phone' type='submit'><i className="bi bi-search search__body-btn-phone-img" style={{fontSize: '24px', color: '#2F3035'}}></i></button>
 					</div>
 				</div>
 			</section>
