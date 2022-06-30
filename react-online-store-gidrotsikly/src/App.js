@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import FullScreen from './FullScreen';
 import Search from './Search';
 import ProductCategories from './ProductCategories';
+import PopularGoods from './PopularGoods';
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 				<FullScreen/>
 				<Search/>
 				<ProductCategories/>
+				<PopularGoods/>
 			</div>
 		</div>
 	);

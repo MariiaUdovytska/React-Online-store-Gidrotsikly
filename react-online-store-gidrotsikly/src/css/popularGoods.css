@@ -1,0 +1,22 @@
+.popular-goods{
+	margin-top: 45px;
+}
+.popular-goods__body{
+	display: flex;
+	flex-direction: column;
+}
+.popular-goods__body-title{
+	font-weight: 700;
+	font-size: 1.78rem;
+	margin-bottom: 20px;
+}
+.popular-goods__body-carousel{
+	display: flex;
+	flex-direction: row;
+	margin: 0px -12px;
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+.popular-goods__body-carousel-items{
+	padding: 0px 12px;
+}
