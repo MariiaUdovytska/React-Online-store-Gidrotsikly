@@ -1,3 +1,16 @@
 .product-categories{
 	margin-top: 75px;
 }
+.product-categories__body{}
+.product-categories__body ul{
+	padding-left: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0px -15px;
+}
+.product-categories__body li{
+	padding: 0px 15px;
+	flex: 1 1 33.3333%;
+	margin-bottom: 30px;
+}
