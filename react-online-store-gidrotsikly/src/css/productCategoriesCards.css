@@ -35,3 +35,15 @@
 .product-cards__body-name{}
 .product-cards__body-readmore{}
 .product-cards__body-img{}
+
+@media(max-width: 408px){
+	.product-cards__body{
+		padding: 15px 10px 12px;
+	}
+	.product-cards__body-names h2{
+		font-size: 1.54rem;
+	}
+	.product-cards__body-img img{
+		max-height: 53px;
+	}
+}
