@@ -16,6 +16,7 @@
 	margin: 0px -25px;
 	font-size: 1.1rem;
 	font-weight: 400;
+	cursor: pointer;
 }
 .popular-goods__body-carousel-items{
 	padding: 0px 25px;

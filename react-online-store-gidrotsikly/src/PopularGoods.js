@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/popularGoods.css';
+import InternalCarousel from './InternalCarousel';
 
 class PopularGoods extends React.Component {
 	constructor(props) {
@@ -27,12 +28,7 @@ class PopularGoods extends React.Component {
 						<span className={((this.state.move===5)?'popular-goods__body-carousel-items-active':'popular-goods__body-carousel-items')} onClick={()=>{this.clickLabel(5)}}>аксессуары </span>
 					</div>
 					<div className='popular-goods__body-content'>
-						<div className='popular-goods__body-content-items'>test</div>
-						<div className='popular-goods__body-content-items'>test</div>
-						<div className='popular-goods__body-content-items'>test</div>
-						<div className='popular-goods__body-content-items'>test</div>
-						<div className='popular-goods__body-content-items'>test</div>
-						<div className='popular-goods__body-content-items'>test</div>
+						<div className='popular-goods__body-content-items'><InternalCarousel/></div>
 					</div>
 				</div>
 			</section>
