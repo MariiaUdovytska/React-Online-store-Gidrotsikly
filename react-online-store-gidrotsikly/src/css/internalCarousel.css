@@ -1,6 +1,17 @@
 .internal-carousel{
 	margin-top: 25px;
 }
-.internal-carousel__body{}
-.internal-carousel__body-items{}
-.internal-carousel__body-card{}
+.internal-carousel__body{
+	
+}
+.internal-carousel__body-items{
+	padding-left: 0px;
+	display:flex;
+	flex-direction:row;
+	margin: 0px -15px;
+	
+}
+.internal-carousel__body-card{
+	padding: 0px 15px;
+	flex: 1 1 25%;
+}
