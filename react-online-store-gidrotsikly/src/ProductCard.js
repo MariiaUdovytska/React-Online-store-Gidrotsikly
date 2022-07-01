@@ -19,9 +19,10 @@ class ProductCard extends React.Component {
 			<div className='card'>
 				<div className='card__body'>
 					<div className='card__body-up'>
-						<div className='card__body-up-sale'><span>Sale</span></div>
+						<div className='card__body-up-sale' style={{visibility:(this.props.saleProduct === true ? 'visible' : 'hidden')}}><span>Sale</span></div>
 						<div className='card__body-up-like'><i className='bi bi-heart' style={{fontSize:'20px'}}></i></div>
 					</div>
+					
 					<div className='card__body-imgprice'>
 						<div className='card__body-imgprice-img'>
 							<figure>

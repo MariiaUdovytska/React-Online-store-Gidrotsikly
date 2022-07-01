@@ -1,17 +1,24 @@
 .internal-carousel{
 	margin-top: 25px;
+	margin-left: -31px;
+	margin-right: -31px;
+	display: flex;
+	align-items: center;
+}
+.internal-carousel button{
+	background-color: unset;
 }
 .internal-carousel__body{
-	
+	overflow: hidden;
 }
 .internal-carousel__body-items{
 	padding-left: 0px;
 	display:flex;
 	flex-direction:row;
 	margin: 0px -15px;
-	
 }
 .internal-carousel__body-card{
 	padding: 0px 15px;
 	flex: 1 1 25%;
+	min-width: 25%;
 }
