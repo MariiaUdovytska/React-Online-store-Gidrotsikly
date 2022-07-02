@@ -21,13 +21,18 @@ class InternalCarousel extends React.Component {
 		let lastMove = this.state.move;
 		this.setState({move:lastMove + 1});
 	}
+
+	componentWillReceiveProps(nextProps){
+		this.setState({move:0});
+	}
+
 	render(){
 		let value = `translateX(${-100*this.state.move}%)`;
 		let arrayLi = [];
 		for (let index = 0; index < this.props.data.length; index++) {
 			const element = this.props.data[index];
 			arrayLi.push(
-				<li className='internal-carousel__body-card' style={{transform: value}}>
+				<li key={index} className='internal-carousel__body-card' style={{transform: value}}>
 					<ProductCard
 						imageProduct={element.image} 
 						nameProduct={element.name} 
@@ -40,7 +45,7 @@ class InternalCarousel extends React.Component {
 				<button onClick={this.leftButtonClick} type='submit' className='internal-carousel__arrowleft'><i className="bi bi-chevron-compact-left" style={{fontSize:'31px', color:'#2F3035'}}></i></button>
 				<div className='internal-carousel__body'>
 					<ul className='internal-carousel__body-items'>
-					{arrayLi}
+						{arrayLi}
 					</ul>
 				</div>
 				<button onClick={this.rigthButtonClick} type='submit' className='internal-carousel__arrowright'><i className="bi bi-chevron-compact-right" style={{fontSize:'31px', color:'#2F3035'}}></i></button>

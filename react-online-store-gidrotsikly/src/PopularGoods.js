@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/popularGoods.css';
 import InternalCarousel from './InternalCarousel';
+import stockCards from './data/stockCards.json';
 
 class PopularGoods extends React.Component {
 	constructor(props) {
@@ -14,44 +15,7 @@ class PopularGoods extends React.Component {
 		)
 	}
 	render(){
-		let dataCard = [
-			{
-				image: require("./img/products/rukzak.png"),
-				name: 'Водонепроницаемый Рюкзак',
-				price: '400 $',
-				sale: true
-			},
-			{
-				image: require("./img/products/rukzak.png"),
-				name: 'Водонепроницаемый Рюкзак',
-				price: '400 $',
-				sale: true
-			},
-			{
-				image: require("./img/products/rukzak.png"),
-				name: 'Водонепроницаемый Рюкзак',
-				price: '400 $',
-				sale: true
-			},
-			{
-				image: require("./img/products/rukzak.png"),
-				name: 'Водонепроницаемый Рюкзак',
-				price: '400 $',
-				sale: true
-			},
-			{
-				image: require("./img/products/rukzak.png"),
-				name: 'Водонепроницаемый Рюкзак',
-				price: '400 $',
-				sale: true
-			},
-			{
-				image: require("./img/products/mensuit.png"),
-				name: 'Водонепроницаемый Рюкзак',
-				price: '400 $',
-				sale: true
-			}
-		];
+		let dataCard = stockCards;
 		return(
 			<section className='popular-goods containerM'>
 				<div className='popular-goods__body'>
@@ -65,8 +29,7 @@ class PopularGoods extends React.Component {
 						<span className={((this.state.move===5)?'popular-goods__body-carousel-items-active':'popular-goods__body-carousel-items')} onClick={()=>{this.clickLabel(5)}}>аксессуары </span>
 					</div>
 					<div className='popular-goods__body-content'>
-						<div className='popular-goods__body-content-items'><InternalCarousel data={dataCard}/></div>
-						
+						<div className='popular-goods__body-content-items'><InternalCarousel data={dataCard[this.state.move]}/></div>
 					</div>
 				</div>
 			</section>
