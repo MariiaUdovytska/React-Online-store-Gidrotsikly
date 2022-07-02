@@ -5,26 +5,45 @@ import ProductCard from './ProductCard';
 class InternalCarousel extends React.Component {
 	constructor(props) {
 		super(props);
+		this.state ={move:0, contItems:this.props.data.length};
 	}
 
+	leftButtonClick = () =>{
+		if(this.state.move === 0)
+			return;
+		let lastMove = this.state.move;
+		this.setState({move:lastMove - 1});
+	}
+
+	rigthButtonClick = () =>{
+		if(this.state.move === this.state.contItems - 4)
+			return;
+		let lastMove = this.state.move;
+		this.setState({move:lastMove + 1});
+	}
 	render(){
-		
+		let value = `translateX(${-100*this.state.move}%)`;
+		let arrayLi = [];
+		for (let index = 0; index < this.props.data.length; index++) {
+			const element = this.props.data[index];
+			arrayLi.push(
+				<li className='internal-carousel__body-card' style={{transform: value}}>
+					<ProductCard
+						imageProduct={element.image} 
+						nameProduct={element.name} 
+						priceProduct={element.price} 
+						saleProduct={element.sale}/>
+				</li>);
+		}
 		return(
 			<div className='internal-carousel'>
-				<button type='submit' className='internal-carousel__arrowleft'><i className="bi bi-chevron-compact-left" style={{fontSize:'31px', color:'#2F3035'}}></i></button>
+				<button onClick={this.leftButtonClick} type='submit' className='internal-carousel__arrowleft'><i className="bi bi-chevron-compact-left" style={{fontSize:'31px', color:'#2F3035'}}></i></button>
 				<div className='internal-carousel__body'>
 					<ul className='internal-carousel__body-items'>
-						<li className='internal-carousel__body-card' ><ProductCard imageProduct={require("./img/products/rukzak.png")} nameProduct={'Водонепроницаемый Рюкзак'} priceProduct={'400 $'} saleProduct={true}/></li>
-						<li className='internal-carousel__body-card' ><ProductCard imageProduct={require("./img/products/lifejacket.png")} nameProduct={'Спасательный жилет BRP Mens Airflow PFD'} priceProduct={'320 $'}/></li>
-						<li className='internal-carousel__body-card' ><ProductCard imageProduct={require("./img/products/audiopremiumsustem.png")} nameProduct={'BRP Audio-Premium System'} priceProduct={'1 000 $'} saleProduct={true}/></li>
-						<li className='internal-carousel__body-card' ><ProductCard imageProduct={require("./img/products/rescueequipment.png")} nameProduct={'Спасательное снаряжение'} /></li>
-						<li className='internal-carousel__body-card' ><ProductCard imageProduct={require("./img/products/audioportablesystem.png")} nameProduct={'BRP Audio-портативная система'}/></li>
-						<li className='internal-carousel__body-card' ><ProductCard imageProduct={require("./img/products/garminechomapplus.png")} nameProduct={'Garmin Echomap Plus 62cv'} priceProduct={'920 $'}/></li>
-						<li className='internal-carousel__body-card' ><ProductCard imageProduct={require("./img/products/tmkey.png")} nameProduct={'RF D.E.S.S.TM Key'} /></li>
-						<li className='internal-carousel__body-card' ><ProductCard imageProduct={require("./img/products/mensuit.png")} nameProduct={'Мужской костюм 3мм'} priceProduct={'100 $'}/></li>
+					{arrayLi}
 					</ul>
 				</div>
-				<button type='submit' className='internal-carousel__arrowright'><i className="bi bi-chevron-compact-right" style={{fontSize:'31px', color:'#2F3035'}}></i></button>
+				<button onClick={this.rigthButtonClick} type='submit' className='internal-carousel__arrowright'><i className="bi bi-chevron-compact-right" style={{fontSize:'31px', color:'#2F3035'}}></i></button>
 			</div>
 		)
 	}

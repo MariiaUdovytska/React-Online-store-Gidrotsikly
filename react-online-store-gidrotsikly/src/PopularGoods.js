@@ -14,7 +14,44 @@ class PopularGoods extends React.Component {
 		)
 	}
 	render(){
-		
+		let dataCard = [
+			{
+				image: require("./img/products/rukzak.png"),
+				name: 'Водонепроницаемый Рюкзак',
+				price: '400 $',
+				sale: true
+			},
+			{
+				image: require("./img/products/rukzak.png"),
+				name: 'Водонепроницаемый Рюкзак',
+				price: '400 $',
+				sale: true
+			},
+			{
+				image: require("./img/products/rukzak.png"),
+				name: 'Водонепроницаемый Рюкзак',
+				price: '400 $',
+				sale: true
+			},
+			{
+				image: require("./img/products/rukzak.png"),
+				name: 'Водонепроницаемый Рюкзак',
+				price: '400 $',
+				sale: true
+			},
+			{
+				image: require("./img/products/rukzak.png"),
+				name: 'Водонепроницаемый Рюкзак',
+				price: '400 $',
+				sale: true
+			},
+			{
+				image: require("./img/products/mensuit.png"),
+				name: 'Водонепроницаемый Рюкзак',
+				price: '400 $',
+				sale: true
+			}
+		];
 		return(
 			<section className='popular-goods containerM'>
 				<div className='popular-goods__body'>
@@ -28,7 +65,8 @@ class PopularGoods extends React.Component {
 						<span className={((this.state.move===5)?'popular-goods__body-carousel-items-active':'popular-goods__body-carousel-items')} onClick={()=>{this.clickLabel(5)}}>аксессуары </span>
 					</div>
 					<div className='popular-goods__body-content'>
-						<div className='popular-goods__body-content-items'><InternalCarousel/></div>
+						<div className='popular-goods__body-content-items'><InternalCarousel data={dataCard}/></div>
+						
 					</div>
 				</div>
 			</section>
