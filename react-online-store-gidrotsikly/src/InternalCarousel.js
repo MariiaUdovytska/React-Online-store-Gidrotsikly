@@ -23,7 +23,7 @@ class InternalCarousel extends React.Component {
 	}
 
 	componentWillReceiveProps(nextProps){
-		this.setState({move:0});
+		this.setState({move:0, contItems:nextProps.data.length});
 	}
 
 	render(){
