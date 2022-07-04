@@ -1,0 +1,32 @@
+.banner-sale{
+	background-color: #1C62CD;
+	margin-top: 80px;
+}
+.banner-sale__body{
+	padding: 28px 120px 28px 71px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.banner-sale__body-imgs{}
+.banner-sale__body-text{
+	color: #fff;
+	font-weight: 700;
+	font-size: 2.57rem;
+}
+.banner-sale__body-btn{
+	background-color: #fff;
+	font-size: 1.71rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-radius: 3px;
+	padding: 20px 40px;
+}
+.banner-sale__body-btn:hover{
+	/* outline: 1px solid rgb(179, 179, 179); */
+	box-shadow: 3px 3px 20px rgba(99, 11, 11, 0.932);
+	font-weight: 700;
+	transition: all 0.3s ease-in-out;
+}

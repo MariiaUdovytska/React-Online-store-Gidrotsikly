@@ -4,6 +4,7 @@ import FullScreen from './FullScreen';
 import Search from './Search';
 import ProductCategories from './ProductCategories';
 import PopularGoods from './PopularGoods';
+import BannerSale from './BannerSale';
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<Search/>
 				<ProductCategories/>
 				<PopularGoods/>
+				<BannerSale/>
 			</div>
 		</div>
 	);
