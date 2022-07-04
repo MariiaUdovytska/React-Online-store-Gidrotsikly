@@ -33,3 +33,15 @@
 	background-color: #1C62CD;
 	margin-top: 10px;
 }
+
+@media(max-width:702px){
+	.popular-goods__body-carousel{
+		margin: 0px -15px;
+	}
+	.popular-goods__body-carousel-items{
+		padding: 0px 15px;
+	}
+	.popular-goods__body-carousel-items-active{
+		padding: 0px 15px;
+	}
+}

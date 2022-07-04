@@ -10,78 +10,7 @@
 	justify-content: space-between;
 	position: relative;
 }
-.card__body-up{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.card__body-up-sale{
-	background-color: #1C62CD;
-	color: #fff;
-	padding: 8px 20px;
-	text-transform: uppercase;
-	max-height: 30px;
-}
-.card__body-up-like{
-	padding: 19px 16px 0px 0px;
-}
-.card__body-up-like .bi-heart:hover::before{
-	color: #1C62CD;
-	transform: scale(1.2);
-	transition: all 0.3s ease-in-out;
-}
-.card__body-imgprice{}
-.card__body-imgprice-img figure{
-	margin: 0px 15px;
-}
-.card__body-imgprice-img figcaption{
-	font-weight: 400;
-	font-size: 1.28rem;
-	text-align: center;
-	min-height: 50px;
-}
-.card__body-imgprice-price{
-	text-align: center;
-	font-family: barlow;
-	font-weight: 400;
-	font-size: 2.14rem;
-	padding-top: 8px;
-}
-.card__body-imgprice-basket{
-	text-align: end;
-}
-.card__body-imgprice-basket .bi-cart2::before{
-	color: #fff;
-	display: inline-block;
-	background-color: #1C62CD;
-	padding: 5px 10px;
-	border-top-left-radius: 12px;
-}
 
-.card__body-imgprice-instock{
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	padding: 0px 27px 20px;
-}
-.card__body-imgprice-havnot{
-	font-weight: 700;
-	font-size: 1.28rem;
-	margin-bottom: 13px;
-}
-.card__body-imgprice-reportadmission{
-	font-weight: 400;
-	font-size: 1.14rem;
-	color: #1C62CD;
-}
-.card__body-imgprice-reportadmission::after{
-	display: block;
-	content: "";
-	background-color: #1C62CD;
-	width: 100%;
-	height: 1px;
-	margin-top: 3px;
-}
 .card{
 	border: none!important;
 	outline: 1px solid rgba(0,0,0,.125);
@@ -110,8 +39,107 @@
 .card-m:hover{
 	outline: none;
 	box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
-	border-radius: 3px;
+	transition: box-shadow 0.3s ease-in-out;
 }
 .card-m:hover .card__body-hover{
 	display: block;
+	transition: display 0.5s ease-in-out;
 } 
+
+
+.card__body-up{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.card__body-up-sale{
+	background-color: #1C62CD;
+	color: #fff;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	max-height: 30px;
+}
+.card__body-up-like{
+	padding: 19px 16px 0px 0px;
+}
+.card__body-up-like .bi-heart:hover::before{
+	color: #1C62CD;
+	transform: scale(1.2);
+	transition: all 0.3s ease-in-out;
+}
+.card__body-imgprice-img figure{
+	margin: 0px 15px;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.card__body-imgprice-img figure img{
+	padding: 15px;
+}
+
+
+.card__body-imgprice-img figcaption{
+	font-weight: 400;
+	font-size: 1.28rem;
+	text-align: center;
+	min-height: 50px;
+}
+.card__body-imgprice-price{
+	text-align: center;
+	font-family: barlow;
+	font-weight: 400;
+	font-size: 2.14rem;
+	padding-top: 8px;
+}
+.card__body-imgprice-basket{
+	text-align: end;
+}
+.card__body-imgprice-basket .bi-cart2::before{
+	color: #fff;
+	display: inline-block;
+	background-color: #1C62CD;
+	padding: 5px 10px;
+	border-top-left-radius: 12px;
+}
+
+.card__body-imgprice-instock{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 27px 20px;
+}
+.card__body-imgprice-havnot{
+	font-weight: 700;
+	font-size: 1.28rem;
+	margin-bottom: 13px;
+}
+.card__body-imgprice-reportadmission{
+	font-weight: 400;
+	font-size: 1.14rem;
+	color: #1C62CD;
+	text-align: center;
+}
+.card__body-imgprice-reportadmission::after{
+	display: block;
+	content: "";
+	background-color: #1C62CD;
+	width: 100%;
+	height: 1px;
+	margin-top: 3px;
+}
+
+@media(max-width:1074px){
+	.card__body-imgprice-reportadmission::after{
+		display: none;
+	}
+}
+@media(max-width:997px){
+	.card__body-hover span{
+		font-size: 1.12rem;
+		padding: 10px 13px;
+	}
+	.card__body-imgprice-reportadmission::after{
+		display: none;
+	}
+}
+

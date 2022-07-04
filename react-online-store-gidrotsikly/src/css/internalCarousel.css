@@ -1,7 +1,6 @@
 .internal-carousel{
-	margin-top: 15px;
-	margin-left: -32px;
-	margin-right: -32px;
+	margin: 15px -32px 0px -32px;
+	padding: 0px 15px;
 	display: flex;
 	align-items: center;
 }
@@ -29,4 +28,15 @@
 }
 .internal-carousel__arrowright{
 	margin-left: -15px;
+}
+
+@media(max-width:932px){
+	.internal-carousel__body-card{
+		min-width: 33.3333%;
+	}
+}
+@media(max-width:640px){
+	.internal-carousel__body-card{
+		min-width: 50%;
+	}
 }
