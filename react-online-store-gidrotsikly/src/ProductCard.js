@@ -16,13 +16,13 @@ class ProductCard extends React.Component {
 	render(){
 		let showBusket = this.props.priceProduct !== undefined;
 		return(
-			<div className='card'>
+			<div className='card-m card'>
 				<div className='card__body'>
+					<a href='#' className='card__body-hover'><span>посмотреть товар</span></a>
 					<div className='card__body-up'>
 						<div className='card__body-up-sale' style={{visibility:(this.props.saleProduct === true ? 'visible' : 'hidden')}}><span>Sale</span></div>
 						<div className='card__body-up-like'><i className='bi bi-heart' style={{fontSize:'20px'}}></i></div>
 					</div>
-					
 					<div className='card__body-imgprice'>
 						<div className='card__body-imgprice-img'>
 							<figure>
@@ -40,7 +40,6 @@ class ProductCard extends React.Component {
 							<a href='#' className='card__body-imgprice-reportadmission'>Сообщить о поступлении</a>
 						</div>
 						}
-						
 					</div>
 				</div>
 			</div>
