@@ -37,9 +37,11 @@
 @media(max-width:702px){
 	.external-carousel__body-carousel{
 		margin: 0px -15px;
+		flex-wrap: wrap;
 	}
 	.external-carousel__body-carousel-items{
 		padding: 0px 15px;
+		margin-bottom: 15px;
 	}
 	.external-carousel__body-carousel-items-active{
 		padding: 0px 15px;
