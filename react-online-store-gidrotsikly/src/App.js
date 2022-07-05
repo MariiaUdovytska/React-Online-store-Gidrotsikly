@@ -5,6 +5,7 @@ import Search from './Search';
 import ProductCategories from './ProductCategories';
 import PopularGoods from './PopularGoods';
 import BannerSale from './BannerSale';
+import BuyWithThisProduct from './BuyWithThisProduct';
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				<ProductCategories/>
 				<PopularGoods/>
 				<BannerSale/>
+				<BuyWithThisProduct/>
 			</div>
 		</div>
 	);

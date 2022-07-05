@@ -142,9 +142,9 @@
 	],
 	[
 		{
-			"image": "../img/products/audioportablesystem.png",
-			"name": "BRP Audio-портативная система",
-			"sale": false
+			"image": "../img/products/tmkey.png",
+			"name": "RF D.E.S.S.TM Key",
+			"sale": true
 		},
 		{
 			"image": "../img/products/rukzak.png",
@@ -177,9 +177,9 @@
 			"sale": false
 		},
 		{
-			"image": "../img/products/tmkey.png",
-			"name": "RF D.E.S.S.TM Key",
-			"sale": true
+			"image": "../img/products/audioportablesystem.png",
+			"name": "BRP Audio-портативная система",
+			"sale": false
 		}
 	],
 	[
