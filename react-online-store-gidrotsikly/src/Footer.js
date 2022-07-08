@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/footer.css';
+import FooterAccordion from './FooterAccordion';
 import SocialMedia from './SocialMedia';
 
 
@@ -9,7 +10,6 @@ class Footer extends React.Component {
 	}
 
 	render(){
-		
 		return(
 			<footer className='footer'>
 				<div className='footer__body containerM'>
@@ -21,28 +21,7 @@ class Footer extends React.Component {
 							<button className='footer__body-newsletter-btn-phone' type='submit'><i className="bi bi-send-fill" style={{fontSize: '24px', color: '#2F3035'}}></i></button>
 						</div>
 					</div>
-					<div className='footer__body-infoandstore'>
-						<nav>
-							<h3>Информация</h3>
-							<ul>
-								<li><a href="#">О компании</a></li>
-								<li><a href="#">Контакты</a></li>
-								<li><a href="#">Акции</a></li>
-								<li><a href="#">Магазины</a></li>
-							</ul>
-						</nav>
-					</div>
-					<div className='footer__body-infoandstore'>
-						<nav>
-							<h3>Интернет-магазин</h3>
-							<ul>
-								<li><a href="#">Доставка</a></li>
-								<li><a href="#">Оплата</a></li>
-								<li><a href="#">Возврат-обмен</a></li>
-								<li><a href="#">Новости</a></li>
-							</ul>
-						</nav>
-					</div>
+					<FooterAccordion/>
 					<SocialMedia/>
 				</div>
 				<div className='footer__contract containerM'>

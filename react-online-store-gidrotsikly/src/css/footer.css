@@ -52,21 +52,7 @@
 .footer__body-newsletter-btn-phone{
 	display: none;
 }
-.footer__body-infoandstore nav h3{
-	font-weight: 700;
-}
-.footer__body-infoandstore nav ul{
-	margin-bottom: 0px;
-	padding-left: 0px;
-}
-.footer__body-infoandstore nav li a{
-	text-decoration: none;
-	color: #2F3035;
-	line-height: 1.5rem;
-}
-.footer__body-infoandstore nav li a:hover{
-	color: black;
-}
+
 .footer__contract{
 	font-size: 0.72rem;
 	padding-bottom: 22px;
