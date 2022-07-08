@@ -21,9 +21,9 @@ class Footer extends React.Component {
 							<button className='footer__body-newsletter-btn-phone' type='submit'><i className="bi bi-send-fill" style={{fontSize: '24px', color: '#2F3035'}}></i></button>
 						</div>
 					</div>
-					<div className='footer__body-info'>
+					<div className='footer__body-infoandstore'>
 						<nav>
-							Информация
+							<h3>Информация</h3>
 							<ul>
 								<li><a href="#">О компании</a></li>
 								<li><a href="#">Контакты</a></li>
@@ -32,9 +32,9 @@ class Footer extends React.Component {
 							</ul>
 						</nav>
 					</div>
-					<div className='footer__body-onlinestore'>
+					<div className='footer__body-infoandstore'>
 						<nav>
-							Интернет-магазин
+							<h3>Интернет-магазин</h3>
 							<ul>
 								<li><a href="#">Доставка</a></li>
 								<li><a href="#">Оплата</a></li>
