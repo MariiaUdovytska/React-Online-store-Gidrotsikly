@@ -10,12 +10,12 @@ class FullScreen extends React.Component {
 	}
 	render(){
 		return(
-			<section className='full-screen containerM'>
+			<header className='full-screen containerM'>
 				<div className='full-screen__body'>
 					<MenuBurger/>
 					<VisualHeader/>
 				</div>
-			</section>
+			</header>
 		)
 	}
 }
