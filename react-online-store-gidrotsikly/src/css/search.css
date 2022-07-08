@@ -65,7 +65,7 @@
 	background-color: #1C62CD;
 	padding: 17px 40px;
 }
-.search__body-btn:hover:active{
+.search__body-btn:hover{
 	outline: solid 1.5px #84b3f8;
 	transition: outline 0.3s ease-in-out;
 }

@@ -11,8 +11,8 @@ class Footer extends React.Component {
 	render(){
 		
 		return(
-			<footer className='footer containerM'>
-				<div className='footer__body'>
+			<footer className='footer'>
+				<div className='footer__body containerM'>
 					<div className='footer__body-newsletter'>
 						<div className='footer__body-newsletter-text'>Подпишитесь на нашу рассылку <br/>и узнавайте о акция быстрее</div>
 						<div className='footer__body-newsletter-inpwbtn'>
@@ -45,7 +45,7 @@ class Footer extends React.Component {
 					</div>
 					<SocialMedia/>
 				</div>
-				<div className='footer__contract'>
+				<div className='footer__contract containerM'>
 					<span>Договор оферты</span>
 					<span>Политика обработки персональных данных</span>
 				</div>
