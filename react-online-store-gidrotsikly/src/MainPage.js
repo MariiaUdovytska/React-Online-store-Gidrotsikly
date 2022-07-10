@@ -16,7 +16,7 @@ class MainPage extends React.Component {
 	render(){
 		
 		return(
-			<main className='main-page containerM'>
+			<main className='main-page'>
 				<FullScreen/>
 				<Search/>
 				<ProductCategories/>

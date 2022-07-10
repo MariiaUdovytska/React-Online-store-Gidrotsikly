@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/footerAccordion.css';
+import {Accordion} from 'react-bootstrap';
 
 
 class FooterAccordion extends React.Component {
@@ -63,7 +64,32 @@ class FooterAccordion extends React.Component {
 			)
 		} else {
 			return(
-				<div>test</div>
+				<div className='footer__body-accordion-phone'>
+					<Accordion>
+						<Accordion.Item eventKey="0">
+							<Accordion.Header>Информация</Accordion.Header>
+							<Accordion.Body>
+								<ul>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Контакты</a></li>
+									<li><a href="#">Акции</a></li>
+									<li><a href="#">Магазины</a></li>
+								</ul>
+							</Accordion.Body>
+						</Accordion.Item>
+						<Accordion.Item eventKey="1">
+							<Accordion.Header>Интернет-магазин</Accordion.Header>
+							<Accordion.Body>
+								<ul>
+									<li><a href="#">Доставка</a></li>
+									<li><a href="#">Оплата</a></li>
+									<li><a href="#">Возврат-обмен</a></li>
+									<li><a href="#">Новости</a></li>
+								</ul>
+							</Accordion.Body>
+						</Accordion.Item>
+					</Accordion>
+				</div>
 			)
 		}
 		

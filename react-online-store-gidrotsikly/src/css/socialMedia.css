@@ -14,3 +14,8 @@
 		margin-top: 40px;
 	}
 }
+@media (max-width:269px) {
+	.social-media img{
+		margin-right: 15px;
+	}
+}
