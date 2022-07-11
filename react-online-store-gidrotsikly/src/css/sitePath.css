@@ -1,8 +1,7 @@
-.site-path{
-	margin-top: 46px;
+.site-path{ 
 	color: #C4C4C4;
 	font-size: 1.07rem;
-	margin: 46px -10px;
+	margin: 46px -10px 0px;
 }
 .site-path span{
 	padding: 0px 10px;
