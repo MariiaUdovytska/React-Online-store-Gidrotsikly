@@ -8,57 +8,51 @@ import banner4 from './img/carouselHeader/banner4.jpg';
 import advertisingMotor from './img/advertising/advertisingMotor.svg';
 
 
-class VisualHeader extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render(){
-		return(
-			<div className='full-screen__body-banner'>
-				<div className='full-screen__body-banner-carousel'>
-					<Carousel interval={null}>
-						<Carousel.Item>
-							<img className="d-block w-100" src={banner1} alt="First slide"/>
-						</Carousel.Item>
-						<Carousel.Item >
-							<img className="d-block w-100" src={banner2} alt="Second slide"/>
-						</Carousel.Item>
-						<Carousel.Item>
-							<img className="d-block w-100" src={banner3} alt="Third slide"/>
-						</Carousel.Item>
-						<Carousel.Item>
-							<img className="d-block w-100" src={banner4} alt="Third slide"/>
-						</Carousel.Item>
-					</Carousel>
-				</div>
-				<div className='full-screen__body-banner-advertising'>
-					<div className='full-screen__body-banner-advertising-body'>
-						<div className='full-screen__body-banner-advertising-up'>
-							<div className='full-screen__body-banner-advertising-up-price'>
-								<div className='full-screen__body-banner-advertising-up-stock'>
-									<span>акция</span>
-								</div>
-								<div className='full-screen__body-banner-advertising-up-prices'>
-									<span>1 000 $</span>
-									<span>1 200 $</span>
-								</div>
+function VisualHeader (){
+	return(
+		<div className='full-screen__body-banner containerM'>
+			<div className='full-screen__body-banner-carousel'>
+				<Carousel interval={null}>
+					<Carousel.Item>
+						<img className="d-block w-100" src={banner1} alt="First slide"/>
+					</Carousel.Item>
+					<Carousel.Item >
+						<img className="d-block w-100" src={banner2} alt="Second slide"/>
+					</Carousel.Item>
+					<Carousel.Item>
+						<img className="d-block w-100" src={banner3} alt="Third slide"/>
+					</Carousel.Item>
+					<Carousel.Item>
+						<img className="d-block w-100" src={banner4} alt="Third slide"/>
+					</Carousel.Item>
+				</Carousel>
+			</div>
+			<div className='full-screen__body-banner-advertising'>
+				<div className='full-screen__body-banner-advertising-body'>
+					<div className='full-screen__body-banner-advertising-up'>
+						<div className='full-screen__body-banner-advertising-up-price'>
+							<div className='full-screen__body-banner-advertising-up-stock'>
+								<span>акция</span>
 							</div>
-							
-							<figure>
-								<img src={advertisingMotor} alt="motor"></img>
-								<figcaption>Лодочный мотор <br/>Suzuki DF9.9BRS</figcaption>
-							</figure>
+							<div className='full-screen__body-banner-advertising-up-prices'>
+								<span>1 000 $</span>
+								<span>1 200 $</span>
+							</div>
 						</div>
-						<div className='full-screen__body-banner-advertising-down'>
-							<p className='full-screen__body-banner-advertising-down-p'>Акция действует до</p>
-							<p className='full-screen__body-banner-advertising-down-p'>31.08.2020</p>
-						</div>
+						
+						<figure>
+							<img src={advertisingMotor} alt="motor"></img>
+							<figcaption>Лодочный мотор <br/>Suzuki DF9.9BRS</figcaption>
+						</figure>
+					</div>
+					<div className='full-screen__body-banner-advertising-down'>
+						<p className='full-screen__body-banner-advertising-down-p'>Акция действует до</p>
+						<p className='full-screen__body-banner-advertising-down-p'>31.08.2020</p>
 					</div>
 				</div>
 			</div>
-		)
-	}
+		</div>
+	)
 }
 
 export default VisualHeader;

@@ -37,7 +37,7 @@ class MenuBurger extends React.Component {
 		const{sizeWidth} = this.state;
 		if(sizeWidth === true){
 			return(
-				<div className='nav-bar'>
+				<div className='nav-bar containerM'>
 					<Navbar collapseOnSelect expand={true}>
 						<Container>
 							<Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -75,7 +75,7 @@ class MenuBurger extends React.Component {
 			)
 		} else {
 			return(
-				<div className='nav-bar-phone'>
+				<div className='nav-bar-phone containerM'>
 					<div className='nav-bar-phone__burger'>
 						<Navbar collapseOnSelect expand={false} onToggle={this.listenerToggle}>
 							<Container>

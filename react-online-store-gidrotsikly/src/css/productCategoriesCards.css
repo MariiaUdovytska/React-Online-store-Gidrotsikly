@@ -32,9 +32,9 @@
 	box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
 	border-radius: 3px;
 }
-.product-cards__body-name{}
-.product-cards__body-readmore{}
-.product-cards__body-img{}
+.product-cards__body-readmore{
+	cursor: pointer;
+}
 
 @media(max-width: 408px){
 	.product-cards__body{
