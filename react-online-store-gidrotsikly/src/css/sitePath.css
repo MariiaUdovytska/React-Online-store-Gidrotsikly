@@ -1,8 +1,8 @@
-.site-path{ 
+.site-path__body{
 	color: #C4C4C4;
 	font-size: 1.07rem;
 	margin: 46px -10px 0px;
 }
-.site-path span{
+.site-path__body span{
 	padding: 0px 10px;
 }
