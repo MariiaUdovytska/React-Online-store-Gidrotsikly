@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/searchByCategory.css';
 import {Form} from 'react-bootstrap';
+import BasicSearchOptions from './BasicSearchOptions';
 
 function SearchByCategory() {
 	return (
@@ -27,6 +28,7 @@ function SearchByCategory() {
 					</div>
 				</div>
 			</div>
+			<BasicSearchOptions/>
 		</section>
 	);
 }

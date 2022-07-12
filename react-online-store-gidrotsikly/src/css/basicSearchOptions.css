@@ -1,0 +1,13 @@
+.basic-search-options{
+	margin-top: 50px;
+}
+.basic-search-options__body{
+	display: flex;
+	flex-direction: row;
+}
+.basic-search-options__body-options{
+	flex: 1 1 25%;
+}
+.basic-search-options__body-products{
+	flex: 1 1 75%;
+}
