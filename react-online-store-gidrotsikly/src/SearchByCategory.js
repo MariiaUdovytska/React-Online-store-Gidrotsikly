@@ -10,7 +10,7 @@ function SearchByCategory() {
 				<div className='search-by-category__body-common-sorting'>
 					<div className='search-by-category__body-common-sorting-left'>
 						<div className='search-by-category__body-common-sorting-left-items'><span>Полноприводные</span></div>
-						<div className='search-by-category__body-common-sorting-left-items'><span>от 5000</span></div>
+						<div className='search-by-category__body-common-sorting-left-items'><span>от&nbsp;5000</span></div>
 						<div className='search-by-category__body-common-sorting-left-items'><span>BRP</span></div>
 						<div className='search-by-category__body-common-sorting-left-items'><span>еще</span></div>
 					</div>

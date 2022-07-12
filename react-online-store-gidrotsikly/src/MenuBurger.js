@@ -88,8 +88,8 @@ class MenuBurger extends React.Component {
 										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-heart" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Избранное</Nav.Link>
 										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-cart2" style={{ display: 'inline-flex', paddingRight: '23px',fontSize: '17px', color: '#2F3035'}}></i>Корзина</Nav.Link>
 										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-house-door"  style={{ display: 'inline-flex', paddingRight: '23px',fontSize: '17px', color: '#2F3035'}}></i>Магазины</Nav.Link>
-										<Nav.Link className='nav-bar-phone__items-a' href="#"><i class="bi bi-percent" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Акции</Nav.Link>
-										<Nav.Link className='nav-bar-phone__items-a' href="#"><i class="bi bi-box2" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Доставка и оплата</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-percent" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Акции</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-box2" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Доставка и оплата</Nav.Link>
 										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Квадроциклы</Nav.Link>
 										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Катера</Nav.Link>
 										<Nav.Link className='nav-bar-phone__navproducts-items nav-bar-phone__navproducts-items-active' href="#">Гидроциклы</Nav.Link>
