@@ -6,7 +6,7 @@ import quadroRight from './img/bannerSales/quadroRight.png';
 
 function BannerSale() {
 	return (
-		<div className='banner-sale containerM'>
+		<div className='banner-sale'>
 			<div className='banner-sale__body'>
 				<div className='banner-sale__body-imgs'>
 					<img src={quadroLeft} alt='quadro-left'></img>

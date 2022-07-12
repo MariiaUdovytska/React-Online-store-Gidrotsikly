@@ -31,7 +31,7 @@ class Search extends React.Component {
 				break;
 		}
 		return(
-			<section className='search containerM'>
+			<section className='search'>
 				<div className='search__body'>
 					<ul className='search__body-item'>
 						<li className={((this.state.move===0)?'search__body-items-active':'search__body-items')} onClick={()=>{this.clickLabel(0)}}>Поиск по номеру</li>

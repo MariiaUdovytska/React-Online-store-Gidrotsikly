@@ -5,7 +5,7 @@ import './css/advancedOptions.css';
 class AdvancedOptions extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state ={move:0};
+		this.state ={move:1};
 	}
 
 	clickLabel = (i) =>{
@@ -25,7 +25,12 @@ class AdvancedOptions extends React.Component {
 					</div>
 					<div className='advanced-options__body-items'>
 						<div className='advanced-options__body-item' style={{transform: value}}>test 1</div>
-						<div className='advanced-options__body-item' style={{transform: value}}>test 2222</div>
+						<div className='advanced-options__body-item' style={{transform: value}}>
+							<div className='advanced-options__body-item-inputbtn'>
+								<input className='advanced-options__body-item-input' type='text' placeholder='Введите марку' aria-label='Введите марку'/>
+								<button className='advanced-options__body-item-btn' type='submit'><i className="bi bi-search search__body-btn-phone-img" style={{fontSize: '24px', color: '#2F3035'}}></i></button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

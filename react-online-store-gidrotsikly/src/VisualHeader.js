@@ -10,7 +10,7 @@ import advertisingMotor from './img/advertising/advertisingMotor.svg';
 
 function VisualHeader (){
 	return(
-		<div className='full-screen__body-banner containerM'>
+		<div className='full-screen__body-banner'>
 			<div className='full-screen__body-banner-carousel'>
 				<Carousel interval={null}>
 					<Carousel.Item>

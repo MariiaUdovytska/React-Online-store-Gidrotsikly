@@ -4,7 +4,7 @@ import ExternalCarousel from './ExternalCarousel';
 
 function PopularGoods () {
 	return(
-		<section className='popular-goods containerM'>
+		<section className='popular-goods'>
 			<ExternalCarousel title={'Популярные товары'} move={0}/>
 		</section>
 	)

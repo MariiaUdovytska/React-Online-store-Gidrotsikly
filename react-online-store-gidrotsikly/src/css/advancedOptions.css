@@ -41,5 +41,33 @@
 	width: 100%;
 	overflow: hidden;
 	display: flex;
-	
 }
+.advanced-options__body-item-inputbtn{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-radius: 40px;
+}
+.advanced-options__body-item-input{
+	width: 100%;
+	background-color: #F0F0F4;
+	padding-left: 2%;
+	font-size: 1.14rem;
+	line-height: 3rem;
+}
+.advanced-options__body-item-input::placeholder{
+	color: #656464;
+}
+.advanced-options__body-item-input:focus{
+	border-right: solid 1px #84b3f8;
+	border-top: solid 1px #84b3f8;
+	border-bottom: solid 1px #84b3f8;
+	border-left: solid 1px #84b3f8;
+}
+.advanced-options__body-item-btn{
+	padding: 11px;
+}
+.bi-search:hover::before{
+		transform: scale(1.1);
+		transition: all 0.3s ease-in-out;
+	}

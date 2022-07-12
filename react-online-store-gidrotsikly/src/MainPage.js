@@ -10,7 +10,7 @@ import VisualHeader from './VisualHeader';
 
 function MainPage () {
 	return(
-		<main className='main-page'>
+		<main className='main-page containerM'>
 			<VisualHeader/>
 			<Search/>
 			<ProductCategories/>

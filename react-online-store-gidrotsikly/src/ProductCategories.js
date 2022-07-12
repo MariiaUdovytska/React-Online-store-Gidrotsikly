@@ -4,7 +4,7 @@ import ProductCategoriesCards from './ProductCategoriesCards';
 
 function ProductCategories () {
 	return(
-		<section className='product-categories containerM'>
+		<section className='product-categories'>
 			<div className='product-categories__body'>
 				<ul>
 					<li><ProductCategoriesCards productCardsImg={require("./img/productCategories/quadrotsicle.png")} productCardsName={'Квадроциклы'}/></li>
