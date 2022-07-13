@@ -1,0 +1,38 @@
+.advanced-options__body-item{}
+.advanced-options-item__body{}
+.advanced-options-item__body-presence .accordion-button{
+	background-color: unset;
+	font-weight: 600;
+	padding: 15px 0px 15px 4px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+.advanced-options-item__body-presence .accordion-button:not(.collapsed){
+	background-color: #fff;
+	font-weight: 600;
+	color: #212529;
+}
+.advanced-options-item__body-presence .accordion-button::after{
+	margin-left: 0px;
+	margin-right: 15px;
+}
+.advanced-options-item__body-presence .accordion-button:not(.collapsed)::after {
+	filter: invert(46%) sepia(25%) saturate(3579%) hue-rotate(169deg) brightness(96%) contrast(89%);
+}
+
+.advanced-options-item__body-presence-choice input{
+	margin: 4px;
+}
+.accordion-body{
+	display: flex;
+	flex-direction: row;
+	padding: 1rem 0rem;
+	margin: 0px -15px;
+}
+.advanced-options-item__body-presence-choice{
+	padding: 0px 15px;
+}
+.accordion-item{
+	border: none;
+}
