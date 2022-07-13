@@ -1,6 +1,9 @@
 .advanced-options__body-item{}
 .advanced-options-item__body{}
-.advanced-options-item__body-presence .accordion-button{
+.advanced-options-item__body-presence .accordion-button,
+.advanced-options-item__body-new .accordion-button,
+.advanced-options-item__body-brand .accordion-button,
+.advanced-options-item__body-model .accordion-button{
 	background-color: unset;
 	font-weight: 600;
 	padding: 15px 0px 15px 4px;
@@ -8,31 +11,60 @@
 	flex-direction: row-reverse;
 	justify-content: flex-end;
 }
-.advanced-options-item__body-presence .accordion-button:not(.collapsed){
+.advanced-options-item__body-presence .accordion-button:not(.collapsed),
+.advanced-options-item__body-new .accordion-button:not(.collapsed),
+.advanced-options-item__body-brand .accordion-button:not(.collapsed),
+.advanced-options-item__body-model .accordion-button:not(.collapsed){
 	background-color: #fff;
 	font-weight: 600;
 	color: #212529;
 }
-.advanced-options-item__body-presence .accordion-button::after{
+.advanced-options-item__body-presence .accordion-button::after,
+.advanced-options-item__body-new .accordion-button::after,
+.advanced-options-item__body-brand .accordion-button::after,
+.advanced-options-item__body-model .accordion-button::after{
 	margin-left: 0px;
 	margin-right: 15px;
 }
-.advanced-options-item__body-presence .accordion-button:not(.collapsed)::after {
+.advanced-options-item__body-presence .accordion-button:not(.collapsed)::after,
+.advanced-options-item__body-new .accordion-button:not(.collapsed)::after,
+.advanced-options-item__body-brand .accordion-button:not(.collapsed)::after,
+.advanced-options-item__body-model .accordion-button:not(.collapsed)::after{
 	filter: invert(46%) sepia(25%) saturate(3579%) hue-rotate(169deg) brightness(96%) contrast(89%);
 }
 
-.advanced-options-item__body-presence-choice input{
-	margin: 4px;
-}
+
 .accordion-body{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	padding: 1rem 0rem;
 	margin: 0px -15px;
+	min-width: 100%;
 }
-.advanced-options-item__body-presence-choice{
+.advanced-options-item__body-presence-choice,
+.advanced-options-item__body-new-choice,
+.advanced-options-item__body-brand-choice,
+.advanced-options-item__body-model-choice{
 	padding: 0px 15px;
+}
+.advanced-options-item__body-presence-choice input,
+.advanced-options-item__body-new-choice input,
+.advanced-options-item__body-brand-choice input,
+.advanced-options-item__body-model-choice input{
+	margin: 4px;
 }
 .accordion-item{
 	border: none;
+}
+.advanced-options-item__body-model-input{
+	padding: 0px 15px;
+	margin-bottom: 15px;
+	min-width: 100%;
+}
+.advanced-options-item__body-model-input input{
+	border: 1px solid #E0E0E0;
+	padding: 5px;
+	font-size: 0.85rem;
+	width: 100%;
 }
