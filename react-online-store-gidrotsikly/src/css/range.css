@@ -1,5 +1,6 @@
-.range{
-
+.range{}
+.form {
+	padding: 20px 0px 0px;
 }
 .input-range__label--min {
 	left: 18px!important;
@@ -7,16 +8,13 @@
 .input-range__label--max {
 	right: 18px!important;
 }
-.form {
-	padding: 20px 0px 0px;
-	/* margin: 0 auto;
-	padding: 100px 30px 0; */
-
-	/* @media (min-width: 800px) {
-	max-width: 60%;
-	} */
+.input-range__track--active{
+	background-color: #1C62CD!important;
+}
+.input-range__slider{
+	background-color: #1C62CD!important;
+}
+.input-range__slider:active{
+	transform: scale(1.2)!important;
 }
 
-/* .input-range {
-	margin-bottom: 160px;
-} */

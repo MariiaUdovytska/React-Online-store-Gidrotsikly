@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/advancedOptionsParametres.css';
-import {Accordion} from 'react-bootstrap';
+import {Accordion, Form} from 'react-bootstrap';
 import Range from './Range';
 
 
@@ -63,6 +63,46 @@ class AdvancedOptionsParametres extends React.Component {
 							</Accordion.Item>
 						</Accordion>
 					</div>
+					<div className='advanced-options-item__body-power'>
+						<div className='advanced-options-item__body-power-fir'>
+							<div className='advanced-options-item__body-power-first'>
+								<span>Мощность, л.с.</span>
+								<Form.Select size="sm">
+									<option value="1">90</option>
+									<option value="2">130</option>
+									<option value="3">154</option>
+									<option value="4">230</option>
+									<option value="5">300</option>
+								</Form.Select>
+							</div>
+						</div>
+						<div className='advanced-options-item__body-power-fir'>
+							<div className='advanced-options-item__body-power-second'>
+								<span>Мощность двигателя, л.с.</span>
+								<Form.Select size="sm">
+									<option value="1">90</option>
+									<option value="2">130</option>
+									<option value="3">154</option>
+									<option value="4">230</option>
+									<option value="5">300</option>
+								</Form.Select>
+							</div>
+						</div>
+						<div className='advanced-options-item__body-power-fir'>
+							<div className='advanced-options-item__body-power-last'>
+								<span>Макс. скорость</span>
+								<Form.Select size="sm">
+									<option value="1">90</option>
+									<option value="2">130</option>
+									<option value="3">154</option>
+									<option value="4">230</option>
+									<option value="5">300</option>
+								</Form.Select>
+							</div>
+						</div>
+						
+					</div>
+
 					<div className='advanced-options-item__body-brand'>
 						<Accordion alwaysOpen>
 							<Accordion.Item>
