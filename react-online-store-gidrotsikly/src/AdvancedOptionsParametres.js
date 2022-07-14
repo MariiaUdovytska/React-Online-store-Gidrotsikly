@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/advancedOptionsParametres.css';
 import {Accordion} from 'react-bootstrap';
+import Range from './Range';
 
 
 class AdvancedOptionsParametres extends React.Component {
@@ -48,6 +49,16 @@ class AdvancedOptionsParametres extends React.Component {
 									<input type="checkbox" name="new3" id="new3"/>
 									<label htmlFor="new3">Акции</label>
 								</div>
+							</Accordion.Body>
+							</Accordion.Item>
+						</Accordion>
+					</div>
+					<div className='advanced-options-item__body-price'>
+						<Accordion alwaysOpen>
+							<Accordion.Item>
+							<Accordion.Header>Цена</Accordion.Header>
+							<Accordion.Body>
+								<div className='advanced-options-item__body-price-choice'><Range/></div>
 							</Accordion.Body>
 							</Accordion.Item>
 						</Accordion>

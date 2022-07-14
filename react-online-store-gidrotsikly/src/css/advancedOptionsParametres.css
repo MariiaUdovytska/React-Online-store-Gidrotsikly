@@ -5,7 +5,8 @@
 .advanced-options-item__body-brand .accordion-button,
 .advanced-options-item__body-model .accordion-button,
 .advanced-options-item__body-countries .accordion-button,
-.advanced-options-item__body-stock .accordion-button{
+.advanced-options-item__body-stock .accordion-button,
+.advanced-options-item__body-price .accordion-button{
 	background-color: unset;
 	font-weight: 600;
 	padding: 15px 0px 15px 4px;
@@ -18,7 +19,8 @@
 .advanced-options-item__body-brand .accordion-button:not(.collapsed),
 .advanced-options-item__body-model .accordion-button:not(.collapsed),
 .advanced-options-item__body-countries .accordion-button:not(.collapsed),
-.advanced-options-item__body-stock .accordion-button:not(.collapsed){
+.advanced-options-item__body-stock .accordion-button:not(.collapsed),
+.advanced-options-item__body-price .accordion-button:not(.collapsed){
 	background-color: #fff;
 	font-weight: 600;
 	color: #212529;
@@ -28,7 +30,8 @@
 .advanced-options-item__body-brand .accordion-button::after,
 .advanced-options-item__body-model .accordion-button::after,
 .advanced-options-item__body-countries .accordion-button::after,
-.advanced-options-item__body-stock .accordion-button::after{
+.advanced-options-item__body-stock .accordion-button::after,
+.advanced-options-item__body-price .accordion-button::after{
 	margin-left: 0px;
 	margin-right: 15px;
 }
@@ -37,7 +40,8 @@
 .advanced-options-item__body-brand .accordion-button:not(.collapsed)::after,
 .advanced-options-item__body-model .accordion-button:not(.collapsed)::after,
 .advanced-options-item__body-countries .accordion-button:not(.collapsed)::after,
-.advanced-options-item__body-stock .accordion-button:not(.collapsed)::after{
+.advanced-options-item__body-stock .accordion-button:not(.collapsed)::after,
+.advanced-options-item__body-price .accordion-button:not(.collapsed)::after{
 	filter: invert(46%) sepia(25%) saturate(3579%) hue-rotate(169deg) brightness(96%) contrast(89%);
 }
 
@@ -55,15 +59,20 @@
 .advanced-options-item__body-new-choice,
 .advanced-options-item__body-brand-choice,
 .advanced-options-item__body-model-choice,
-.advanced-options-item__body-countries-choice{
+.advanced-options-item__body-countries-choice,
+.advanced-options-item__body-price-choice{
 	padding: 0px 15px;
 	margin-bottom: 10px;
+}
+.advanced-options-item__body-price-choice{
+	width: 100%;
 }
 .advanced-options-item__body-presence-choice input,
 .advanced-options-item__body-new-choice input,
 .advanced-options-item__body-brand-choice input,
 .advanced-options-item__body-model-choice input,
-.advanced-options-item__body-countries-choice input{
+.advanced-options-item__body-countries-choice input,
+.advanced-options-item__body-price-choice input{
 	margin: 4px;
 }
 .accordion-item{
