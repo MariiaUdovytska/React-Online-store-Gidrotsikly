@@ -101,6 +101,52 @@ class AdvancedOptionsParametres extends React.Component {
 							</Accordion.Item>
 						</Accordion>
 					</div>
+					<div className='advanced-options-item__body-stock'>
+						<Accordion alwaysOpen>
+							<Accordion.Item>
+							<Accordion.Header>Акции</Accordion.Header>
+							<Accordion.Body>
+								<div className='advanced-options-item__body-stock-choice'>
+									<div className='advanced-options-item__body-stock-choice-sale'><span>Sale</span></div>
+								</div>
+								<div className='advanced-options-item__body-stock-choice'>
+									<div className='advanced-options-item__body-stock-choice-new'><span>NEW</span></div>
+								</div>
+								<div className='advanced-options-item__body-stock-choice'>
+									<div className='advanced-options-item__body-stock-choice-new'><span>HIT</span></div>
+								</div>
+								<div className='advanced-options-item__body-stock-choice'>
+									<div className='advanced-options-item__body-stock-choice-diler'><span>ДИЛЕР</span></div>
+								</div>
+							</Accordion.Body>
+							</Accordion.Item>
+						</Accordion>
+					</div>
+					<div className='advanced-options-item__body-countries'>
+						<Accordion alwaysOpen>
+							<Accordion.Item>
+							<Accordion.Header>Страны</Accordion.Header>
+							<Accordion.Body>
+								<div className='advanced-options-item__body-countries-choice'>
+									<input type="checkbox" name="countries" id="countries"/>
+									<label htmlFor="countries">Италия</label>
+								</div>
+								<div className='advanced-options-item__body-countries-choice'>
+									<input type="checkbox" name="countries2" id="countries2"/>
+									<label htmlFor="countries2">Польша</label>
+								</div>
+								<div className='advanced-options-item__body-countries-choice'>
+									<input type="checkbox" name="countries3" id="countries3"/>
+									<label htmlFor="countries3">Британия</label>
+								</div>
+								<div className='advanced-options-item__body-countries-choice'>
+									<input type="checkbox" name="countries4" id="countries4"/>
+									<label htmlFor="countries4">США</label>
+								</div>
+							</Accordion.Body>
+							</Accordion.Item>
+						</Accordion>
+					</div>
 				</div>
 			</div>
 		);
