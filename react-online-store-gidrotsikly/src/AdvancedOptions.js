@@ -27,7 +27,7 @@ class AdvancedOptions extends React.Component {
 					</div>
 					<div className='advanced-options__body-items'>
 						<div className='advanced-options__body-item' style={{transform: value}}>
-							<AdvancedOptionsParametres/>
+							<AdvancedOptionsParametres onChange={(change)=> this.props.onChange(change)}/>
 						</div>
 						<div className='advanced-options__body-item' style={{transform: value}}>
 							<div className='advanced-options__body-item-inputbtn'>
