@@ -19,9 +19,11 @@
 	margin: 0px -4px;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 .search-by-category__body-common-sorting-left-items{
 padding: 0px 4px;
+margin-bottom: 20px;
 }
 .search-by-category__body-common-sorting-left span{
 	background-color: #F0F0F4;

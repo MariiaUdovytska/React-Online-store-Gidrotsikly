@@ -37,7 +37,7 @@ class AdvancedOptionsParametres extends React.Component {
 	}
 	
 	handleClickReset = ()=> {
-		this.setState(this.defaultState);
+		this.setState(this.defaultState, this.hadndleUpdate);
 	}
 
 	hadndleUpdate = ()=> {
