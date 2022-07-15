@@ -5,6 +5,7 @@ import Range from './Range';
 
 
 class AdvancedOptionsParametres extends React.Component {
+	defaultState={};
 	constructor(props) {
 		super(props);
 		this.state={
@@ -32,8 +33,12 @@ class AdvancedOptionsParametres extends React.Component {
 			stockHit:false,
 			stockDiler:false
 		}
+		this.defaultState= {...this.state};
 	}
 	
+	handleClickReset = ()=> {
+		this.setState(this.defaultState);
+	}
 
 	render(){
 		
@@ -284,6 +289,12 @@ class AdvancedOptionsParametres extends React.Component {
 							</Accordion.Body>
 							</Accordion.Item>
 						</Accordion>
+					</div>
+					<div className='button-choose'>
+						<div className='button-choose__body'>
+							<div className='button-choose__body-send'><button type='submit'>ВЫБРАТЬ</button></div>
+							<div className='button-choose__body-reset' onClick={this.handleClickReset}><button type='submit'>Сбросить фильтр</button></div>
+						</div>
 					</div>
 				</div>
 			</div>
