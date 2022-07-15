@@ -97,34 +97,35 @@
 	font-size: 0.85rem;
 	width: 100%;
 }
-.advanced-options-item__body-stock-choice div{
+
+.advanced-options-item__body-stock-choice input{
+	opacity: 0;
 	cursor: default;
 	margin-bottom: 17px;
 }
-.advanced-options-item__body-stock-choice:last-child{
-	margin-bottom: 0px;
-}
-.advanced-options-item__body-stock-choice div span{
+.advanced-options-item__body-stock-choice-span-sale,
+.advanced-options-item__body-stock-choice-span-new,
+.advanced-options-item__body-stock-choice-span-hit,
+.advanced-options-item__body-stock-choice-span-diler{
+	padding: 6px 19px;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.85rem;
-	padding: 6px 19px;
 }
-.advanced-options-item__body-stock-choice-sale span{
-	margin-left: 15px;
+.advanced-options-item__body-stock-choice-span-sale{
 	background-color: #1C62CD;
 	color: #fff;
 }
-.advanced-options-item__body-stock-choice-new span{
-	margin-left: 15px;
+.advanced-options-item__body-stock-choice-span-new,
+.advanced-options-item__body-stock-choice-span-hit{
 	background-color: #F0F0F4;
 	color: #C4C4C4;
 }
-.advanced-options-item__body-stock-choice-diler span{
+.advanced-options-item__body-stock-choice-span-diler{
 	background-color: #2F3035;
 	color: #fff;
-	margin-left: 15px;
 }
+
 .advanced-options-item__body-power{
 	margin-top: 20px;
 }
