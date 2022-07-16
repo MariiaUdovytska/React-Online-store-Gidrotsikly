@@ -7,7 +7,7 @@ import BasicSearchOptions from './BasicSearchOptions';
 class SearchByCategory extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state ={labels:[]};
+		this.state ={labels:[], view:true};
 	}
 
 	handleChange = (change) =>{
@@ -38,12 +38,12 @@ class SearchByCategory extends React.Component {
 									<option value="2">Сперва акции</option>
 								</Form.Select>
 							</div>
-							<span><i className="bi bi-grid" style={{fontSize:'23px'}}></i></span>
-							<span><i className="bi bi-list-task" style={{fontSize:'29px'}}></i></span>
+							<span><i className="bi bi-grid" style={{fontSize:'23px'}} onClick={()=>this.setState({view:true})}></i></span>
+							<span><i className="bi bi-list-task" style={{fontSize:'29px'}} onClick={()=>this.setState({view:false})}></i></span>
 						</div>
 					</div>
 				</div>
-				<BasicSearchOptions onChange={this.handleChange}/>
+				<BasicSearchOptions onChange={this.handleChange} view={this.state.view}/>
 			</section>
 		);
 	}

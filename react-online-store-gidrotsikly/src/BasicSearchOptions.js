@@ -9,7 +9,7 @@ function BasicSearchOptions(props) {
 		<div className='basic-search-options'>
 			<div className='basic-search-options__body'>
 				<div className='basic-search-options__body-options'><AdvancedOptions onChange={(change)=> props.onChange(change)}/></div>
-				<div className='basic-search-options__body-products'><JetSkisProducts/></div>
+				<div className='basic-search-options__body-products'><JetSkisProducts view={props.view}/></div>
 			</div>
 		</div>
 	);
