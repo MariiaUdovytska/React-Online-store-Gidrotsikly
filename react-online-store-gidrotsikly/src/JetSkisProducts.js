@@ -7,7 +7,6 @@ import ProductCardList from './ProductCardList';
 class JetSkisProducts extends React.Component {
 	constructor(props) {
 		super(props);
-
 		this.state ={contItems:stockCardsJetSkis.length};
 	}
 
@@ -39,7 +38,7 @@ class JetSkisProducts extends React.Component {
 		}
 		return(
 			<div className='jetskis-products'>
-				<ul className='jetskis-products__body'>
+				<ul className={((this.props.view === false)?'jetskis-products__body-list':'jetskis-products__body')}>
 					{arrayLi}
 				</ul>
 			</div>
