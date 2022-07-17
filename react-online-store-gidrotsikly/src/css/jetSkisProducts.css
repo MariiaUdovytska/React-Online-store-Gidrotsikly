@@ -18,9 +18,16 @@
 }
 .jetskis-products__body-items-list{
 	min-width: 100%!important;
+	margin-bottom: 20px;
 }
 .jetskis-products__body-list{
-	min-width: 100%;
+	width: 100%;
 	margin: 0px -15px;
 	padding-left: 0px;
+}
+@media (max-width:850px) {
+	.jetskis-products__body-items{
+		flex: 1 1 50%;
+		min-width: 50%;
+	}
 }

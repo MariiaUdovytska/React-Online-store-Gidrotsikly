@@ -57,4 +57,107 @@
 	text-transform: uppercase;
 	max-height: 30px; 
 }
-.card-list__body-up-like{}
+.card-list__body-up-like{
+	padding: 19px 16px 0px 0px;
+}
+.card-list__body-up-like .bi-heart:hover::before{
+	color: #1C62CD;
+	transform: scale(1.2);
+	transition: all 0.3s ease-in-out;
+}
+
+.card-list__body-imgprice{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.card-list__body-imgprice-img figure{
+	margin: 0px 15px;
+	max-width: 100%;
+}
+.card-list__body-imgp-list{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.card-list__body-imgp-list-name{
+	font-weight: 400;
+	font-size: 1.28rem;
+	text-align: center;
+	margin-top: 50px;
+	padding: 0px 40px;
+}
+.card-list__body-imgprice-price{
+	text-align: center;
+	font-family: barlow;
+	font-weight: 400;
+	font-size: 2.14rem;
+	padding-top: 8px;
+}
+.card-list__body-imgprice-basket{
+	text-align: end;
+}
+.card-list__body-imgprice-basket .bi-cart2::before{
+	color: #fff;
+	display: inline-block;
+	background-color: #1C62CD;
+	padding: 5px 10px;
+	border-top-left-radius: 12px;
+}
+
+.card-list__body-imgprice-instock{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 148px;
+	justify-content: center;
+}
+.card-list__body-imgprice-havnot{
+	font-weight: 700;
+	font-size: 1.28rem;
+	margin-bottom: 13px;
+	text-align: center;
+}
+.card-list__body-imgprice-reportadmission{
+	font-weight: 400;
+	font-size: 1.14rem;
+	color: #1C62CD;
+	text-align: center;
+}
+.card-list__body-imgprice-reportadmission::after{
+	display: block;
+	content: "";
+	background-color: #1C62CD;
+	width: 100%;
+	height: 1px;
+	margin-top: 3px;
+}
+
+@media (max-width:1108px) {
+	.card-list__body-imgp-list-name{
+		padding: 0px 15px 0px 0px;
+	}
+	.card-list__body-imgprice-instock{
+		padding: 0px 125px;
+	}
+}
+@media (max-width:999px) {
+	.card-list__body-imgprice-instock{
+		padding: 0px 90px;
+	}
+}
+@media (max-width:907px) {
+	.card-list__body-imgprice-instock{
+		padding: 0px 50px;
+	}
+}
+@media (max-width:817px) {
+	.card-list__body-imgprice-instock{
+		padding: 0px 20px;
+	}
+}
+@media (max-width:757px) {
+	.card-list__body-imgprice-instock{
+		padding: 0px 15px 0px opx;
+	}
+}

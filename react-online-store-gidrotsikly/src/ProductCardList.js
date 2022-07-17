@@ -16,11 +16,13 @@ function ProductCardList (props){
 						<div className='card-list__body-imgprice-img'>
 							<figure>
 								<img src={props.imageProduct} alt='imageProduct'></img>
-								<figcaption><h3>{props.nameProduct}</h3></figcaption>
+								{/* <figcaption><h3>{props.nameProduct}</h3></figcaption> */}
 							</figure>
 						</div>
+
 						{showBusket === true
-						?<div>
+						?<div className='card-list__body-imgp-list'>
+							<div className='card-list__body-imgp-list-name'><h3>{props.nameProduct}</h3></div>
 							<div className='card-list__body-imgprice-price'><span>{props.priceProduct}</span></div>
 							<div className='card-list__body-imgprice-basket'><i className="bi bi-cart2" style={{fontSize:'23px'}}></i></div>
 						</div>
