@@ -31,3 +31,8 @@
 		min-width: 50%;
 	}
 }
+@media (max-width:506px) {
+	.jetskis-products__body-items{
+		min-width: 100%;
+	}
+}

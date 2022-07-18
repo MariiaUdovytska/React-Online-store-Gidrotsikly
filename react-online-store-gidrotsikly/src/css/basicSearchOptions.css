@@ -14,3 +14,39 @@
 	flex: 1 1 74%;
 	padding: 0px 4px;
 }
+@media(max-width:797px){
+	.basic-search-options__body{
+		position: relative;
+		
+	}
+	.basic-search-options__body{
+		flex-direction: column;
+	}
+	.basic-search-options__body-options{
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: -104%;
+		width: 100%;
+		z-index: 2;
+		background-color: #fff;
+		margin-top: -5px;
+		transition: left 0.5s;
+	}
+	.basic-search-options__body-options-active{
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0%;
+		width: 100%;
+		z-index: 2;
+		background-color: #fff;
+		transition: left 0.5s;
+		margin-top: -5px;
+	}
+}
+@media(max-width:506px){
+	.basic-search-options__body-products{
+		width: 100%;
+	}
+}

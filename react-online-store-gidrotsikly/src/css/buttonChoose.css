@@ -27,7 +27,7 @@
 }
 .button-choose__body-reset button{
 	background-color: transparent;
-	
+	margin-bottom: 30px;
 }
 .button-choose__body-reset button::after{
 	display: block;

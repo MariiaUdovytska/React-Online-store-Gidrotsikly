@@ -7,7 +7,7 @@ import BasicSearchOptions from './BasicSearchOptions';
 class SearchByCategory extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state ={labels:[], view:true};
+		this.state ={labels:[], view:true, collapseOptions:true};
 	}
 
 	handleChange = (change) =>{
@@ -31,6 +31,7 @@ class SearchByCategory extends React.Component {
 							{arrayDiv}
 						</div>
 						<div className='search-by-category__body-common-sorting-right'>
+							<span><i className={((this.state.collapseOptions === true)?'bi bi-chevron-double-down':'bi bi-chevron-double-down rotate')} style={{fontSize:'23px'}} onClick={()=>this.setState({collapseOptions:!this.state.collapseOptions})}></i></span>
 							<div className='search-by-category__body-common-sorting-right-select'>
 								<Form.Select aria-label="По полулярности">
 									<option>По полулярности</option>
@@ -43,7 +44,7 @@ class SearchByCategory extends React.Component {
 						</div>
 					</div>
 				</div>
-				<BasicSearchOptions onChange={this.handleChange} view={this.state.view}/>
+				<BasicSearchOptions onChange={this.handleChange} view={this.state.view} collapseOptions={this.state.collapseOptions}/>
 			</section>
 		);
 	}
