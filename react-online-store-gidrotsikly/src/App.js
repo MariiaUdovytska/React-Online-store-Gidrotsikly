@@ -4,6 +4,7 @@ import MainPage from './MainPage';
 import Footer from './Footer';
 import MenuBurger from './MenuBurger';
 import JetSkisPage from './JetSkisPage';
+import ProductPage from './ProductPage';
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 			<div className='page'>
 				<MenuBurger/>
 				<JetSkisPage/>
+				<ProductPage/>
 				<Footer/>
 			</div>
 		</div>
