@@ -11,7 +11,7 @@ function App() {
 		<div className="wrapper">
 			<div className='page'>
 				<MenuBurger/>
-				<JetSkisPage/>
+				{/* <JetSkisPage/> */}
 				<ProductPage/>
 				<Footer/>
 			</div>
