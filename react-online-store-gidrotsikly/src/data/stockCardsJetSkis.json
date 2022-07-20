@@ -12,7 +12,8 @@
 		"engineType":"Бензиновый",
 		"year":"2017",
 		"color":"yellow",
-		"position":"respect"
+		"position":"respect",
+		"presence":"В наличии"
 	},
 	{
 		"image": "../img/productsJetSkis/jetSkis2.png",
@@ -27,7 +28,8 @@
 		"engineType":"Бензиновый",
 		"year":"2018",
 		"color":"blue",
-		"position":"respect"
+		"position":"respect",
+		"presence":"В наличии"
 	},
 	{
 		"image": "../img/productsJetSkis/jetSkis3.png",
@@ -42,7 +44,8 @@
 		"engineType":"Бензиновый",
 		"year":"2019",
 		"color":"green",
-		"position":"respect"
+		"position":"respect",
+		"presence":"В наличии"
 	},
 	{
 		"image": "../img/productsJetSkis/jetSkis4.png",
@@ -56,7 +59,8 @@
 		"engineType":"Бензиновый",
 		"year":"2018",
 		"color":"blue",
-		"position":"respect"
+		"position":"respect",
+		"presence":"Нет в наличии"
 	},
 	{
 		"image": "../img/productsJetSkis/jetSkis5.png",
@@ -71,7 +75,8 @@
 		"engineType":"Бензиновый",
 		"year":"2020",
 		"color":"grey",
-		"position":"respect"
+		"position":"respect",
+		"presence":"В наличии"
 	},
 	{
 		"image": "../img/productsJetSkis/jetSkis6.png",
@@ -86,7 +91,8 @@
 		"engineType":"Бензиновый",
 		"year":"2018",
 		"color":"yellow",
-		"position":"respect"
+		"position":"respect",
+		"presence":"В наличии"
 	},
 	{
 		"image": "../img/productsJetSkis/jetSkis7.png",
@@ -101,7 +107,8 @@
 		"engineType":"Бензиновый",
 		"year":"2019",
 		"color":"turquoise",
-		"position":"respect"
+		"position":"respect",
+		"presence":"В наличии"
 	},
 	{
 		"image": "../img/productsJetSkis/jetSkis8.png",
@@ -116,7 +123,8 @@
 		"engineType":"Бензиновый",
 		"year":"2020",
 		"color":"orange-blue",
-		"position":"respect"
+		"position":"respect",
+		"presence":"В наличии"
 	},
 	{
 		"image": "../img/productsJetSkis/jetSkis9.png",
@@ -131,7 +139,8 @@
 		"engineType":"Бензиновый",
 		"year":"2020",
 		"color":"orange",
-		"position":"respect"
+		"position":"respect",
+		"presence":"В наличии"
 	},
 	{
 		"image": "../img/productsJetSkis/jetSkis10.png",
@@ -146,7 +155,8 @@
 		"engineType":"Бензиновый",
 		"year":"2020",
 		"color":"yellow",
-		"position":"respect"
+		"position":"respect",
+		"presence":"В наличии"
 	},
 	{
 		"image": "../img/productsJetSkis/jetSkis11.png",
@@ -160,7 +170,8 @@
 		"engineType":"Бензиновый",
 		"year":"2018",
 		"color":"grey",
-		"position":"respect"
+		"position":"respect",
+		"presence":"Нет в наличии"
 	},{
 		"image": "../img/productsJetSkis/jetSkis12.png",
 		"name":"Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry ",
@@ -172,6 +183,7 @@
 		"engineType":"Бензиновый",
 		"year":"2018",
 		"color":"blue",
-		"position":"respect"
+		"position":"respect",
+		"presence":"Нет в наличии"
 	}
 ]
