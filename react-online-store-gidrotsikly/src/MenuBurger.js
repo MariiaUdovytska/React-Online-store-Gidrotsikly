@@ -2,6 +2,7 @@ import React from 'react';
 import './css/menuBurger.css';
 import {Navbar, Nav, Container} from 'react-bootstrap';
 import logo from './img/logo/logo.svg';
+import {Link} from 'react-router-dom';
 
 class MenuBurger extends React.Component {
 	constructor(props) {
@@ -47,7 +48,7 @@ class MenuBurger extends React.Component {
 									<Nav.Link className='nav-bar__items-a' href="#">Акции</Nav.Link>
 									<Nav.Link className='nav-bar__items-a' href="#">Доставка и оплата</Nav.Link>
 								</Nav>
-								<Navbar.Brand className='nav-bar__items-brand' href="#home"><img src={logo} alt="logo"/></Navbar.Brand>
+								<Link className='nav-bar__items-brand' to="/home"><img src={logo} alt="logo"/></Link>
 								<Nav className='nav-bar__items-adress'>
 									<Nav.Link className='nav-bar__items-adress-a' href="#"><i className="bi bi-geo-alt" style={{ display: 'inline-flex', fontSize: '30px', color: '#2F3035'}}></i>Город,  ул. Адрес  25</Nav.Link>
 								</Nav>
@@ -63,7 +64,7 @@ class MenuBurger extends React.Component {
 						<ul className='nav-bar__navproducts-item'>
 							<li className='nav-bar__navproducts-items'><a href="#">Квадроциклы</a></li>
 							<li className='nav-bar__navproducts-items'><a href="#">Катера</a></li>
-							<li className='nav-bar__navproducts-items nav-bar__navproducts-items-active'><a href="#">Гидроциклы</a></li>
+							<li className='nav-bar__navproducts-items nav-bar__navproducts-items-active'><Link to="/jetSkisPage">Гидроциклы</Link></li>
 							<li className='nav-bar__navproducts-items'><a href="#">Лодки</a></li>
 							<li className='nav-bar__navproducts-items'><a href="#">Вездеходы</a></li>
 							<li className='nav-bar__navproducts-items'><a href="#">Снегоходы</a></li>
@@ -80,7 +81,7 @@ class MenuBurger extends React.Component {
 						<Navbar collapseOnSelect expand={false} onToggle={this.listenerToggle}>
 							<Container>
 								<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-								<Navbar.Brand className='nav-bar-phone__items-brand' href="#home">DRIVE MOTO</Navbar.Brand>
+								<Navbar.Brand className='nav-bar-phone__items-brand' href="#home"><Link to="/home">DRIVE MOTO</Link></Navbar.Brand>
 								<Navbar.Collapse id="responsive-navbar-nav">
 									<Nav>
 										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-person-fill" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Войти</Nav.Link>
@@ -92,7 +93,7 @@ class MenuBurger extends React.Component {
 										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-box2" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Доставка и оплата</Nav.Link>
 										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Квадроциклы</Nav.Link>
 										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Катера</Nav.Link>
-										<Nav.Link className='nav-bar-phone__navproducts-items nav-bar-phone__navproducts-items-active' href="#">Гидроциклы</Nav.Link>
+										<Nav.Link className='nav-bar-phone__navproducts-items nav-bar-phone__navproducts-items-active' href="#"><Link to="/jetSkisPage">Гидроциклы</Link></Nav.Link>
 										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Вездеходы</Nav.Link>
 										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Снегоходы</Nav.Link>
 										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Двигатели</Nav.Link>
