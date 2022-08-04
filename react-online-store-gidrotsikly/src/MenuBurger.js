@@ -81,7 +81,7 @@ class MenuBurger extends React.Component {
 						<Navbar collapseOnSelect expand={false} onToggle={this.listenerToggle}>
 							<Container>
 								<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-								<Navbar.Brand className='nav-bar-phone__items-brand' href="#home"><Link to="/home">DRIVE MOTO</Link></Navbar.Brand>
+								<Navbar.Brand className='nav-bar-phone__items-brand'><Link to="/home">DRIVE MOTO</Link></Navbar.Brand>
 								<Navbar.Collapse id="responsive-navbar-nav">
 									<Nav>
 										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-person-fill" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Войти</Nav.Link>

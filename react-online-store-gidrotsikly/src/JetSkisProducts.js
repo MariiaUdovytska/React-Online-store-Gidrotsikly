@@ -13,6 +13,13 @@ class JetSkisProducts extends React.Component {
 	render(){
 		let dataCard = stockCardsJetSkis;
 		let arrayLi = [];
+		// dataCard.map(item => {
+		// 	if(this.props.view === false){
+
+		// 	}
+		// }
+		// 	return	
+		// )
 		for (let index = 0; index < dataCard.length; index++) {
 			const element = dataCard[index];
 			if(this.props.view === false){
@@ -22,17 +29,20 @@ class JetSkisProducts extends React.Component {
 							imageProduct={element.image} 
 							nameProduct={element.name} 
 							priceProduct={element.price} 
-							saleProduct={element.sale}/>
+							saleProduct={element.sale}
+							idProduct = {element.id}
+							/>
 					</li>);
-			}
-			else{
+			}else{
 				arrayLi.push(
 					<li key={index} className='jetskis-products__body-items'>
 						<ProductCard
 							imageProduct={element.image} 
 							nameProduct={element.name} 
 							priceProduct={element.price} 
-							saleProduct={element.sale}/>
+							saleProduct={element.sale}
+							idProduct = {element.id}
+							/>
 					</li>);
 			}
 		}

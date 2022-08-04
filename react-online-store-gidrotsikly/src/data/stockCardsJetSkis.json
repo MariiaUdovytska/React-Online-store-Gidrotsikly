@@ -1,5 +1,6 @@
 [
 	{
+		"id":0,
 		"image": "../img/productsJetSkis/jetSkis.png",
 		"name":"Гидроцикл BRP SeaDoo GTI 130hp SE Black Mango",
 		"price": "9 325 $",
@@ -16,6 +17,7 @@
 		"presence":"В наличии"
 	},
 	{
+		"id":1,
 		"image": "../img/productsJetSkis/jetSkis2.png",
 		"name":"Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic",
 		"price": "9 525 $",
@@ -32,6 +34,7 @@
 		"presence":"В наличии"
 	},
 	{
+		"id":2,
 		"image": "../img/productsJetSkis/jetSkis3.png",
 		"name":"Гидроцикл BRP SeaDoo GTR 230hp X California green ",
 		"price": "9 900 $",
@@ -48,6 +51,7 @@
 		"presence":"В наличии"
 	},
 	{
+		"id":3,
 		"image": "../img/productsJetSkis/jetSkis4.png",
 		"name":"Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream",
 		"sale": true,
@@ -63,6 +67,7 @@
 		"presence":"Нет в наличии"
 	},
 	{
+		"id":4,
 		"image": "../img/productsJetSkis/jetSkis5.png",
 		"name":"Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal",
 		"price": "10 100 $",
@@ -79,6 +84,7 @@
 		"presence":"В наличии"
 	},
 	{
+		"id":5,
 		"image": "../img/productsJetSkis/jetSkis6.png",
 		"name":"Гидроцикл BRP SeaDoo Spark 60hp 2 up",
 		"price": "10 450 $",
@@ -95,6 +101,7 @@
 		"presence":"В наличии"
 	},
 	{
+		"id":6,
 		"image": "../img/productsJetSkis/jetSkis7.png",
 		"name":"Гидроцикл BRP SeaDoo Spark GTS 90hp Rental",
 		"price": "9 575 $",
@@ -111,6 +118,7 @@
 		"presence":"В наличии"
 	},
 	{
+		"id":7,
 		"image": "../img/productsJetSkis/jetSkis8.png",
 		"name":"Гидроцикл BRP SeaDoo WAKE 230hp PRO Teal bluel",
 		"price": "10 775 $",
@@ -127,6 +135,7 @@
 		"presence":"В наличии"
 	},
 	{
+		"id":8,
 		"image": "../img/productsJetSkis/jetSkis9.png",
 		"name":"Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper",
 		"price": "7 100 $",
@@ -143,6 +152,7 @@
 		"presence":"В наличии"
 	},
 	{
+		"id":9,
 		"image": "../img/productsJetSkis/jetSkis10.png",
 		"name":"Гидроцикл Spark 2-UP 900 Ho Ace Pineapple ",
 		"price": "7 250 $",
@@ -159,6 +169,7 @@
 		"presence":"В наличии"
 	},
 	{
+		"id":10,
 		"image": "../img/productsJetSkis/jetSkis11.png",
 		"name":"Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla ",
 		"sale": false,
@@ -172,7 +183,9 @@
 		"color":"grey",
 		"position":"respect",
 		"presence":"Нет в наличии"
-	},{
+	},
+	{
+		"id":11,
 		"image": "../img/productsJetSkis/jetSkis12.png",
 		"name":"Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry ",
 		"sale": false,

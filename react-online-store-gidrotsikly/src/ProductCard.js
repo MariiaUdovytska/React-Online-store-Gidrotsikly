@@ -6,10 +6,10 @@ function ProductCard (props){
 
 		let showBusket = props.priceProduct !== undefined;
 		return(
-			<Link to="/productPage">
+			<Link to={`/productPage?id=${props.idProduct}`}>
 				<div className='card-m card'>
 					<div className='card__body'>
-						<a href='#' className='card__body-hover'><span>посмотреть товар</span></a>
+						<a href='' className='card__body-hover'><span>посмотреть товар</span></a>
 						<div className='card__body-up'>
 							<div className='card__body-up-sale' style={{visibility:(props.saleProduct === true ? 'visible' : 'hidden')}}><span>Sale</span></div>
 							<div className='card__body-up-like'><i className='bi bi-heart' style={{fontSize:'20px'}}></i></div>
@@ -37,6 +37,5 @@ function ProductCard (props){
 			</Link>
 		)
 	}
-
 
 export default ProductCard;

@@ -9,7 +9,8 @@ class ProductCardFull extends React.Component {
 		this.state ={
 			move:0, 
 			showMore:false,
-			sizeWidth: true,};
+			sizeWidth: true,
+		};
 	}
 
 	getWindowDimensions = ()=> {
@@ -47,7 +48,7 @@ class ProductCardFull extends React.Component {
 
 	render(){
 		let jetCard = stockCards;
-		const element = jetCard[1];
+		const element = jetCard[this.props.id];
 		let showPrice = element.price !== undefined;
 		let value = `translateX(${-100*this.state.move}%)`;
 		const{sizeWidth} = this.state;

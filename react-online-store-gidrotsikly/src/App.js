@@ -14,6 +14,7 @@ function App() {
 				<BrowserRouter>
 					<MenuBurger/>
 					<Routes>
+						<Route exact path="/" element={<MainPage/>}/>
 						<Route exact path="/home" element={<MainPage/>}/>
 						<Route path="/jetSkisPage" element={<JetSkisPage/>} exact/>
 						<Route path="/productPage" element={<ProductPage/>} exact/>

@@ -5,7 +5,7 @@ import ProductCard from './ProductCard';
 class InternalCarousel extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state ={move:0, contItems:this.props.data.length};
+		this.state ={move:0, contItems:this.props.data.length, touchPosition: null};
 	}
 
 	leftButtonClick = () =>{
@@ -26,6 +26,33 @@ class InternalCarousel extends React.Component {
 		this.setState({move:0, contItems:nextProps.data.length});
 	}
 
+	handleTouchStart = (e) => {
+		const touchDown = e.touches[0].clientX
+		this.setState({touchPosition: touchDown});
+	}
+
+
+	handleTouchMove = (e) => {
+		const touchDown = this.state.touchPosition
+
+		if(touchDown === null) {
+			return
+		}
+
+		const currentTouch = e.touches[0].clientX
+		const diff = touchDown - currentTouch
+
+		if (diff > 5) {
+			this.rigthButtonClick()
+		}
+
+		if (diff < -5) {
+			this.leftButtonClick()
+		}
+
+		this.setState({touchPosition: null});
+	}
+
 	render(){
 		let value = `translateX(${-100*this.state.move}%)`;
 		let arrayLi = [];
@@ -41,7 +68,7 @@ class InternalCarousel extends React.Component {
 				</li>);
 		}
 		return(
-			<div className='internal-carousel'>
+			<div className='internal-carousel' onTouchStart={this.handleTouchStart} onTouchMove={this.handleTouchMove}>
 				<button onClick={this.leftButtonClick} type='submit' className='internal-carousel__arrowleft'><i className="bi bi-chevron-compact-left" style={{fontSize:'31px', color:'#2F3035'}}></i></button>
 				<div className='internal-carousel__body'>
 					<ul className='internal-carousel__body-items'>
