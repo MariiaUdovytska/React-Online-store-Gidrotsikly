@@ -1,8 +1,9 @@
 .product-card-full{
 	margin-top: 45px;
 }
-.product-card-full__body{
-	
+.not-faund{
+	padding-top: 45px;
+	padding-bottom: 202px;
 }
 .product-card-full__body-product{
 	display: flex;

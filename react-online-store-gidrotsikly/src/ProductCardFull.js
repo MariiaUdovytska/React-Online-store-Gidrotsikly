@@ -51,7 +51,7 @@ class ProductCardFull extends React.Component {
 		const element = jetCard[this.props.id];
 		if(element===undefined){
 			return(
-				<div>{`Товар с Id:${this.props.id} не найден`}</div>
+				<div className='not-faund containerM'>{`Товар с Id:${this.props.id} не найден`}</div>
 			)
 		}
 		let showPrice = element.price !== undefined;
