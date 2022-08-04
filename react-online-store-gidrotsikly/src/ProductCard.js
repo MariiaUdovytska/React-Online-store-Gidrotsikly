@@ -5,8 +5,12 @@ import {Link} from 'react-router-dom';
 function ProductCard (props){
 
 		let showBusket = props.priceProduct !== undefined;
+		let link = `/productPage?id=${props.idProduct}`;
+		if(props.idProduct === undefined){
+			link='/';
+		}
 		return(
-			<Link to={`/productPage?id=${props.idProduct}`}>
+			<Link to={link}>
 				<div className='card-m card'>
 					<div className='card__body'>
 						<a href='' className='card__body-hover'><span>посмотреть товар</span></a>

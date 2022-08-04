@@ -49,6 +49,11 @@ class ProductCardFull extends React.Component {
 	render(){
 		let jetCard = stockCards;
 		const element = jetCard[this.props.id];
+		if(element===undefined){
+			return(
+				<div>{`Товар с Id:${this.props.id} не найден`}</div>
+			)
+		}
 		let showPrice = element.price !== undefined;
 		let value = `translateX(${-100*this.state.move}%)`;
 		const{sizeWidth} = this.state;
@@ -100,39 +105,41 @@ class ProductCardFull extends React.Component {
 									<div className='product-card-full__body-product-right-carousel-items advanced-options__body-items'>
 										<div className='product-card-full__body-product-right-carousel-characters advanced-options__body-item' style={{transform: value}}>
 											<table>
-												<tr>
-													<td>Производитель</td>
-													<td>{element.manufacturer}</td>
-												</tr>
-												<tr>
-													<td>Количество мест, шт: </td>
-													<td>{element.numberSeats}</td>
-												</tr>
-												<tr>
-													<td>Мощность, л.с. </td>
-													<td>{element.power}</td>
-												</tr>
-												<tr>
-													<td>Тип двигателя </td>
-													<td>{element.engineType}</td>
-												</tr>
-												<tr>
-													<td>Год выпуска</td>
-													<td>{element.year}</td>
-												</tr>
-												{this.state.showMore === true
-												?<>
+												<tbody>
 													<tr>
-														<td>Цвет</td>
-														<td>{element.color}</td>
+														<td>Производитель</td>
+														<td>{element.manufacturer}</td>
 													</tr>
 													<tr>
-														<td>Позиция</td>
-														<td>{element.position}</td>
+														<td>Количество мест, шт: </td>
+														<td>{element.numberSeats}</td>
 													</tr>
-												</>
-												:""
-												}
+													<tr>
+														<td>Мощность, л.с. </td>
+														<td>{element.power}</td>
+													</tr>
+													<tr>
+														<td>Тип двигателя </td>
+														<td>{element.engineType}</td>
+													</tr>
+													<tr>
+														<td>Год выпуска</td>
+														<td>{element.year}</td>
+													</tr>
+													{this.state.showMore === true
+													?<>
+														<tr>
+															<td>Цвет</td>
+															<td>{element.color}</td>
+														</tr>
+														<tr>
+															<td>Позиция</td>
+															<td>{element.position}</td>
+														</tr>
+													</>
+													:""
+													}
+												</tbody>
 											</table>
 											<span onClick={this.clickShowMore} className='product-card-full__body-product-right-carousel-characters-show'>
 												{this.state.showMore===false?"Показать еще":"Скрыть"}
@@ -200,39 +207,41 @@ class ProductCardFull extends React.Component {
 									<div className='product-card-full__body-product-right-carousel-items advanced-options__body-items'>
 										<div className='product-card-full__body-product-right-carousel-characters advanced-options__body-item' style={{transform: value}}>
 											<table>
-												<tr>
-													<td>Производитель</td>
-													<td>{element.manufacturer}</td>
-												</tr>
-												<tr>
-													<td>Количество мест, шт: </td>
-													<td>{element.numberSeats}</td>
-												</tr>
-												<tr>
-													<td>Мощность, л.с. </td>
-													<td>{element.power}</td>
-												</tr>
-												<tr>
-													<td>Тип двигателя </td>
-													<td>{element.engineType}</td>
-												</tr>
-												<tr>
-													<td>Год выпуска</td>
-													<td>{element.year}</td>
-												</tr>
-												{this.state.showMore === true
-												?<>
+												<tbody>
 													<tr>
-														<td>Цвет</td>
-														<td>{element.color}</td>
-													</tr>
-													<tr>
-														<td>Позиция</td>
-														<td>{element.position}</td>
-													</tr>
-												</>
-												:""
-												}
+															<td>Производитель</td>
+															<td>{element.manufacturer}</td>
+														</tr>
+														<tr>
+															<td>Количество мест, шт: </td>
+															<td>{element.numberSeats}</td>
+														</tr>
+														<tr>
+															<td>Мощность, л.с. </td>
+															<td>{element.power}</td>
+														</tr>
+														<tr>
+															<td>Тип двигателя </td>
+															<td>{element.engineType}</td>
+														</tr>
+														<tr>
+															<td>Год выпуска</td>
+															<td>{element.year}</td>
+														</tr>
+														{this.state.showMore === true
+														?<>
+															<tr>
+																<td>Цвет</td>
+																<td>{element.color}</td>
+															</tr>
+															<tr>
+																<td>Позиция</td>
+																<td>{element.position}</td>
+															</tr>
+														</>
+														:""
+														}
+												</tbody>
 											</table>
 											<span onClick={this.clickShowMore} className='product-card-full__body-product-right-carousel-characters-show'>
 												{this.state.showMore===false?"Показать еще":"Скрыть"}
