@@ -1,46 +1,46 @@
 [
 	[
 		{
-			"image": "../img/products/rukzak.png",
+			"image": "./img/products/rukzak.png",
 			"name":"Водонепроницаемый Рюкзак",
 			"price": "400 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/lifejacket.png",
+			"image": "./img/products/lifejacket.png",
 			"name": "Спасательный жилет BRP Mens Airflow PFD",
 			"price": "320 $",
 			"sale": false
 		},
 		{
-			"image": "../img/products/audiopremiumsustem.png",
+			"image": "./img/products/audiopremiumsustem.png",
 			"name": "BRP Audio-Premium System",
 			"price": "1 000 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/rescueequipment.png",
+			"image": "./img/products/rescueequipment.png",
 			"name": "Спасательное снаряжение",
 			"sale": false
 		},
 		{
-			"image": "../img/products/audioportablesystem.png",
+			"image": "./img/products/audioportablesystem.png",
 			"name": "BRP Audio-портативная система",
 			"sale": false
 		},
 		{
-			"image": "../img/products/garminechomapplus.png",
+			"image": "./img/products/garminechomapplus.png",
 			"name": "Garmin Echomap Plus 62cv",
 			"price": "920 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/tmkey.png",
+			"image": "./img/products/tmkey.png",
 			"name": "RF D.E.S.S.TM Key",
 			"sale": true
 		},
 		{
-			"image": "../img/products/mensuit.png",
+			"image": "./img/products/mensuit.png",
 			"name": "Мужской костюм 3мм",
 			"price": "1 000 $",
 			"sale": false
@@ -48,46 +48,46 @@
 	],
 	[
 		{
-			"image": "../img/products/tmkey.png",
+			"image": "./img/products/tmkey.png",
 			"name": "RF D.E.S.S.TM Key",
 			"sale": true
 		},
 		{
-			"image": "../img/products/lifejacket.png",
+			"image": "./img/products/lifejacket.png",
 			"name": "Спасательный жилет BRP Mens Airflow PFD",
 			"price": "320 $",
 			"sale": false
 		},
 		{
-			"image": "../img/products/rescueequipment.png",
+			"image": "./img/products/rescueequipment.png",
 			"name": "Спасательное снаряжение",
 			"sale": false
 		},
 		{
-			"image": "../img/products/audioportablesystem.png",
+			"image": "./img/products/audioportablesystem.png",
 			"name": "BRP Audio-портативная система",
 			"sale": false
 		},
 		{
-			"image": "../img/products/rukzak.png",
+			"image": "./img/products/rukzak.png",
 			"name":"Водонепроницаемый Рюкзак",
 			"price": "400 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/garminechomapplus.png",
+			"image": "./img/products/garminechomapplus.png",
 			"name": "Garmin Echomap Plus 62cv",
 			"price": "920 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/mensuit.png",
+			"image": "./img/products/mensuit.png",
 			"name": "Мужской костюм 3мм",
 			"price": "1 000 $",
 			"sale": false
 		},
 		{
-			"image": "../img/products/audiopremiumsustem.png",
+			"image": "./img/products/audiopremiumsustem.png",
 			"name": "BRP Audio-Premium System",
 			"price": "1 000 $",
 			"sale": true
@@ -95,46 +95,46 @@
 	],
 	[
 		{
-			"image": "../img/products/garminechomapplus.png",
+			"image": "./img/products/garminechomapplus.png",
 			"name": "Garmin Echomap Plus 62cv",
 			"price": "920 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/lifejacket.png",
+			"image": "./img/products/lifejacket.png",
 			"name": "Спасательный жилет BRP Mens Airflow PFD",
 			"price": "320 $",
 			"sale": false
 		},
 		{
-			"image": "../img/products/rescueequipment.png",
+			"image": "./img/products/rescueequipment.png",
 			"name": "Спасательное снаряжение",
 			"sale": false
 		},
 		{
-			"image": "../img/products/tmkey.png",
+			"image": "./img/products/tmkey.png",
 			"name": "RF D.E.S.S.TM Key",
 			"sale": true
 		},
 		{
-			"image": "../img/products/audioportablesystem.png",
+			"image": "./img/products/audioportablesystem.png",
 			"name": "BRP Audio-портативная система",
 			"sale": false
 		},
 		{
-			"image": "../img/products/rukzak.png",
+			"image": "./img/products/rukzak.png",
 			"name":"Водонепроницаемый Рюкзак",
 			"price": "400 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/mensuit.png",
+			"image": "./img/products/mensuit.png",
 			"name": "Мужской костюм 3мм",
 			"price": "1 000 $",
 			"sale": false
 		},
 		{
-			"image": "../img/products/audiopremiumsustem.png",
+			"image": "./img/products/audiopremiumsustem.png",
 			"name": "BRP Audio-Premium System",
 			"price": "1 000 $",
 			"sale": true
@@ -142,76 +142,76 @@
 	],
 	[
 		{
-			"image": "../img/products/tmkey.png",
+			"image": "./img/products/tmkey.png",
 			"name": "RF D.E.S.S.TM Key",
 			"sale": true
 		},
 		{
-			"image": "../img/products/rukzak.png",
+			"image": "./img/products/rukzak.png",
 			"name":"Водонепроницаемый Рюкзак",
 			"price": "400 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/mensuit.png",
+			"image": "./img/products/mensuit.png",
 			"name": "Мужской костюм 3мм",
 			"price": "1 000 $",
 			"sale": false
 		},
 		{
-			"image": "../img/products/audiopremiumsustem.png",
+			"image": "./img/products/audiopremiumsustem.png",
 			"name": "BRP Audio-Premium System",
 			"price": "1 000 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/garminechomapplus.png",
+			"image": "./img/products/garminechomapplus.png",
 			"name": "Garmin Echomap Plus 62cv",
 			"price": "920 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/lifejacket.png",
+			"image": "./img/products/lifejacket.png",
 			"name": "Спасательный жилет BRP Mens Airflow PFD",
 			"price": "320 $",
 			"sale": false
 		},
 		{
-			"image": "../img/products/audioportablesystem.png",
+			"image": "./img/products/audioportablesystem.png",
 			"name": "BRP Audio-портативная система",
 			"sale": false
 		}
 	],
 	[
 		{
-			"image": "../img/products/rescueequipment.png",
+			"image": "./img/products/rescueequipment.png",
 			"name": "Спасательное снаряжение",
 			"sale": false
 		},
 		{
-			"image": "../img/products/audioportablesystem.png",
+			"image": "./img/products/audioportablesystem.png",
 			"name": "BRP Audio-портативная система",
 			"sale": false
 		},
 		{
-			"image": "../img/products/lifejacket.png",
+			"image": "./img/products/lifejacket.png",
 			"name": "Спасательный жилет BRP Mens Airflow PFD",
 			"price": "320 $",
 			"sale": false
 		},
 		{
-			"image": "../img/products/audiopremiumsustem.png",
+			"image": "./img/products/audiopremiumsustem.png",
 			"name": "BRP Audio-Premium System",
 			"price": "1 000 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/tmkey.png",
+			"image": "./img/products/tmkey.png",
 			"name": "RF D.E.S.S.TM Key",
 			"sale": true
 		},
 		{
-			"image": "../img/products/mensuit.png",
+			"image": "./img/products/mensuit.png",
 			"name": "Мужской костюм 3мм",
 			"price": "1 000 $",
 			"sale": false
@@ -219,47 +219,47 @@
 	],
 	[
 		{
-			"image": "../img/products/rukzak.png",
+			"image": "./img/products/rukzak.png",
 			"name":"Водонепроницаемый Рюкзак",
 			"price": "400 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/garminechomapplus.png",
+			"image": "./img/products/garminechomapplus.png",
 			"name": "Garmin Echomap Plus 62cv",
 			"price": "920 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/mensuit.png",
+			"image": "./img/products/mensuit.png",
 			"name": "Мужской костюм 3мм",
 			"price": "1 000 $",
 			"sale": false
 		},
 		{
-			"image": "../img/products/audiopremiumsustem.png",
+			"image": "./img/products/audiopremiumsustem.png",
 			"name": "BRP Audio-Premium System",
 			"price": "1 000 $",
 			"sale": true
 		},
 		{
-			"image": "../img/products/tmkey.png",
+			"image": "./img/products/tmkey.png",
 			"name": "RF D.E.S.S.TM Key",
 			"sale": true
 		},
 		{
-			"image": "../img/products/lifejacket.png",
+			"image": "./img/products/lifejacket.png",
 			"name": "Спасательный жилет BRP Mens Airflow PFD",
 			"price": "320 $",
 			"sale": false
 		},
 		{
-			"image": "../img/products/rescueequipment.png",
+			"image": "./img/products/rescueequipment.png",
 			"name": "Спасательное снаряжение",
 			"sale": false
 		},
 		{
-			"image": "../img/products/audioportablesystem.png",
+			"image": "./img/products/audioportablesystem.png",
 			"name": "BRP Audio-портативная система",
 			"sale": false
 		}

@@ -11,7 +11,7 @@ function App() {
 	return (
 		<div className="wrapper">
 			<div className='page'>
-				<BrowserRouter>
+				<BrowserRouter basename='/React-Online-store-Gidrotsikly'>
 					<MenuBurger/>
 					<Routes>
 						<Route exact path="/" element={<MainPage/>}/>
