@@ -19,10 +19,8 @@ function ProductCardList (props){
 							<div className='card-list__body-imgprice-img'>
 								<figure>
 									<img src={props.imageProduct} alt='imageProduct'></img>
-									{/* <figcaption><h3>{props.nameProduct}</h3></figcaption> */}
 								</figure>
 							</div>
-
 							{showBusket === true
 							?<div className='card-list__body-imgp-list'>
 								<div className='card-list__body-imgp-list-name'><h3>{props.nameProduct}</h3></div>

@@ -112,6 +112,12 @@
 	font-weight: 700;
 	font-size: 0.85rem;
 }
+.advanced-options-item__body-stock-choice-span-sale:hover{
+	outline: 1px solid #9a9dab;
+}
+.advanced-options-item__body-stock-choice-span-diler:hover{
+	outline: 1px solid #9a9dab;
+}
 .advanced-options-item__body-stock-choice-span-sale{
 	background-color: #1C62CD;
 	color: #fff;
@@ -120,6 +126,10 @@
 .advanced-options-item__body-stock-choice-span-hit{
 	background-color: #F0F0F4;
 	color: #C4C4C4;
+}
+.advanced-options-item__body-stock-choice-span-new:hover,
+.advanced-options-item__body-stock-choice-span-hit:hover{
+	outline: 1px solid #acacb2;
 }
 .advanced-options-item__body-stock-choice-span-diler{
 	background-color: #2F3035;

@@ -109,7 +109,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 0px 148px;
+	/* padding: 0px 148px; */
+	padding-right: 18%;
 	justify-content: center;
 }
 .card-list__body-imgprice-havnot{
@@ -137,36 +138,50 @@
 	.card-list__body-imgp-list-name{
 		padding: 0px 15px 0px 0px;
 	}
-	.card-list__body-imgprice-instock{
+	/* .card-list__body-imgprice-instock{
 		padding: 0px 125px;
-	}
+	} */
 }
-@media (max-width:999px) {
+@media (max-width:953px) {
 	.card-list__body-imgprice-instock{
-		padding: 0px 90px;
+		padding-right: 15%;
 	}
 }
-@media (max-width:907px) {
+@media (max-width:857px) {
 	.card-list__body-imgprice-instock{
-		padding: 0px 50px;
+		padding-right: 12%;
 	}
 }
-@media (max-width:817px) {
+@media (max-width:797px){
 	.card-list__body-imgprice-instock{
-		padding: 0px 20px;
+		padding-right: 18%;
 	}
 }
-@media (max-width:757px) {
+@media (max-width:670px){
 	.card-list__body-imgprice-instock{
-		padding: 0px 15px 0px opx;
+		padding-right: 13%;
 	}
 }
+@media (max-width:567px){
+	.card-list__body-imgprice-instock{
+		padding-right: 7%;
+	}
+}
+@media (max-width:540px){
+	.card-list__body-imgprice-instock{
+		padding-right: 1%;
+	}
+}
+
 @media (max-width:506px){
 	.card-list__body-imgprice-img figure{
 		margin: 0px;
 	}
 	.card-list__body-imgprice-img figure img{
 		width: 200px;
+	}
+	.card-list__body-imgprice-instock{
+		padding-right: 7%;
 	}
 }
 @media (max-width:454px){
@@ -181,6 +196,14 @@
 		font-size: 1.8rem;
 	}
 }
+@media (max-width:380px){
+	.card-list__body-imgprice-instock{
+		padding-right: 1%;
+	}
+	.card-list__body-imgprice-reportadmission{
+		font-size: 1rem;
+	}
+}
 @media (max-width:343px){
 	.card-list__body-imgp-list-name{
 		padding: 0px 5px;
@@ -191,5 +214,4 @@
 	.card-list__body-imgprice-img figure{
 		text-align: center;
 	}
-
 }
