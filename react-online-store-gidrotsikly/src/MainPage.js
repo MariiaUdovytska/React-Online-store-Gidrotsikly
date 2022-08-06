@@ -8,15 +8,15 @@ import Search from './Search';
 import VisualHeader from './VisualHeader';
 
 
-function MainPage () {
-	return(
+function MainPage() {
+	return (
 		<main className='main-page containerM'>
-			<VisualHeader/>
-			<Search/>
-			<ProductCategories/>
-			<PopularGoods/>
-			<BannerSale/>
-			<BuyWithThisProduct/>
+			<VisualHeader />
+			<Search />
+			<ProductCategories />
+			<PopularGoods />
+			<BannerSale />
+			<BuyWithThisProduct />
 		</main>
 	)
 }

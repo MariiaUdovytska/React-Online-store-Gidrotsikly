@@ -15,7 +15,7 @@ class Range extends React.Component {
 		};
 	}
 
-	render(){
+	render() {
 		return (
 			<div className='range'>
 				<form className="form">

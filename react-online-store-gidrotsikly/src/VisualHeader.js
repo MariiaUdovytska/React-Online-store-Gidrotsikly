@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/visualHeader.css';
-import {Carousel} from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 import banner1 from './img/carouselHeader/banner1.jpg';
 import banner2 from './img/carouselHeader/banner2.jpg';
 import banner3 from './img/carouselHeader/banner3.jpg';
@@ -8,22 +8,22 @@ import banner4 from './img/carouselHeader/banner4.jpg';
 import advertisingMotor from './img/advertising/advertisingMotor.svg';
 
 
-function VisualHeader (){
-	return(
+function VisualHeader() {
+	return (
 		<div className='full-screen__body-banner'>
 			<div className='full-screen__body-banner-carousel'>
 				<Carousel interval={null}>
 					<Carousel.Item>
-						<img className="d-block w-100" src={banner1} alt="First slide"/>
+						<img className="d-block w-100" src={banner1} alt="First slide" />
 					</Carousel.Item>
 					<Carousel.Item >
-						<img className="d-block w-100" src={banner2} alt="Second slide"/>
+						<img className="d-block w-100" src={banner2} alt="Second slide" />
 					</Carousel.Item>
 					<Carousel.Item>
-						<img className="d-block w-100" src={banner3} alt="Third slide"/>
+						<img className="d-block w-100" src={banner3} alt="Third slide" />
 					</Carousel.Item>
 					<Carousel.Item>
-						<img className="d-block w-100" src={banner4} alt="Third slide"/>
+						<img className="d-block w-100" src={banner4} alt="Third slide" />
 					</Carousel.Item>
 				</Carousel>
 			</div>
@@ -39,10 +39,9 @@ function VisualHeader (){
 								<span>1 200 $</span>
 							</div>
 						</div>
-						
 						<figure>
 							<img src={advertisingMotor} alt="motor"></img>
-							<figcaption>Лодочный мотор <br/>Suzuki DF9.9BRS</figcaption>
+							<figcaption>Лодочный мотор <br />Suzuki DF9.9BRS</figcaption>
 						</figure>
 					</div>
 					<div className='full-screen__body-banner-advertising-down'>

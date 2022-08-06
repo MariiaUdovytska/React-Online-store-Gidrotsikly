@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/footerAccordion.css';
-import {Accordion} from 'react-bootstrap';
+import { Accordion } from 'react-bootstrap';
 
 
 class FooterAccordion extends React.Component {
@@ -12,12 +12,12 @@ class FooterAccordion extends React.Component {
 		}
 	}
 
-	getWindowDimensions = ()=> {
+	getWindowDimensions = () => {
 		const { innerWidth: width } = window;
 		return width;
 	}
 
-	handleWindowDimensions = ()=> {
+	handleWindowDimensions = () => {
 		let width = this.getWindowDimensions()
 		this.setState({
 			sizeWidth: width > 886
@@ -33,10 +33,10 @@ class FooterAccordion extends React.Component {
 		window.removeEventListener('resize', this.handleWindowDimensions);
 	}
 
-	render(){
-		const{sizeWidth} = this.state;
-		if(sizeWidth === true){
-			return(
+	render() {
+		const { sizeWidth } = this.state;
+		if (sizeWidth === true) {
+			return (
 				<div className='footer__body-accordion'>
 					<div className='footer__body-accordion-infoandstore'>
 						<nav>
@@ -63,7 +63,7 @@ class FooterAccordion extends React.Component {
 				</div>
 			)
 		} else {
-			return(
+			return (
 				<div className='footer__body-accordion-phone'>
 					<Accordion>
 						<Accordion.Item eventKey="0">
@@ -92,7 +92,7 @@ class FooterAccordion extends React.Component {
 				</div>
 			)
 		}
-		
+
 	}
 }
 

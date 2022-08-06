@@ -6,8 +6,8 @@ import SitePath from './SitePath';
 function JetSkisPage() {
 	return (
 		<main className='jet-skis-page'>
-			<SitePath/>
-			<SearchByCategory/>
+			<SitePath />
+			<SearchByCategory />
 		</main>
 	);
 }

@@ -2,8 +2,8 @@
 import React from 'react';
 import './css/productCategoriesCards.css';
 
-function ProductCategoriesCards (props) {
-	return(
+function ProductCategoriesCards(props) {
+	return (
 		<section className='product-cards'>
 			<div className='product-cards__body'>
 				<div className='product-cards__body-names'>

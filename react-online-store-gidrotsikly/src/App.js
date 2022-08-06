@@ -1,25 +1,25 @@
-import './css/page.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import MainPage from './MainPage';
-import Footer from './Footer';
-import MenuBurger from './MenuBurger';
-import JetSkisPage from './JetSkisPage';
-import ProductPage from './ProductPage';
-import  { BrowserRouter,Routes , Route} from 'react-router-dom';
+import "./css/page.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import MainPage from "./MainPage";
+import Footer from "./Footer";
+import MenuBurger from "./MenuBurger";
+import JetSkisPage from "./JetSkisPage";
+import ProductPage from "./ProductPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
 	return (
 		<div className="wrapper">
-			<div className='page'>
-				<BrowserRouter basename='/React-Online-store-Gidrotsikly'>
-					<MenuBurger/>
+			<div className="page">
+				<BrowserRouter basename="/React-Online-store-Gidrotsikly">
+					<MenuBurger />
 					<Routes>
-						<Route exact path="/" element={<MainPage/>}/>
-						<Route exact path="/home" element={<MainPage/>}/>
-						<Route path="/jetSkisPage" element={<JetSkisPage/>} exact/>
-						<Route path="/productPage" element={<ProductPage/>} exact/>
+						<Route exact path="/" element={<MainPage />} />
+						<Route exact path="/home" element={<MainPage />} />
+						<Route path="/jetSkisPage" element={<JetSkisPage />} exact />
+						<Route path="/productPage" element={<ProductPage />} exact />
 					</Routes>
-					<Footer/>
+					<Footer />
 				</BrowserRouter>
 			</div>
 		</div>

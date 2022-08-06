@@ -1,8 +1,8 @@
 import React from 'react';
 import './css/menuBurger.css';
-import {Navbar, Nav, Container} from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import logo from './img/logo/logo.svg';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class MenuBurger extends React.Component {
 	constructor(props) {
@@ -13,12 +13,12 @@ class MenuBurger extends React.Component {
 		}
 	}
 
-	getWindowDimensions = ()=> {
+	getWindowDimensions = () => {
 		const { innerWidth: width } = window;
 		return width;
 	}
 
-	handleWindowDimensions = ()=> {
+	handleWindowDimensions = () => {
 		let width = this.getWindowDimensions()
 		this.setState({
 			sizeWidth: width > 678
@@ -34,10 +34,10 @@ class MenuBurger extends React.Component {
 		window.removeEventListener('resize', this.handleWindowDimensions);
 	}
 
-	render(){
-		const{sizeWidth} = this.state;
-		if(sizeWidth === true){
-			return(
+	render() {
+		const { sizeWidth } = this.state;
+		if (sizeWidth === true) {
+			return (
 				<div className='nav-bar containerM'>
 					<Navbar collapseOnSelect expand={true}>
 						<Container>
@@ -48,15 +48,15 @@ class MenuBurger extends React.Component {
 									<Nav.Link className='nav-bar__items-a' href="#">Акции</Nav.Link>
 									<Nav.Link className='nav-bar__items-a' href="#">Доставка и оплата</Nav.Link>
 								</Nav>
-								<Link className='nav-bar__items-brand' to="/home"><img src={logo} alt="logo"/></Link>
+								<Link className='nav-bar__items-brand' to="/home"><img src={logo} alt="logo" /></Link>
 								<Nav className='nav-bar__items-adress'>
-									<Nav.Link className='nav-bar__items-adress-a' href="#"><i className="bi bi-geo-alt" style={{ display: 'inline-flex', fontSize: '30px', color: '#2F3035'}}></i>Город,  ул. Адрес  25</Nav.Link>
+									<Nav.Link className='nav-bar__items-adress-a' href="#"><i className="bi bi-geo-alt" style={{ display: 'inline-flex', fontSize: '30px', color: '#2F3035' }}></i>Город,  ул. Адрес  25</Nav.Link>
 								</Nav>
 							</Navbar.Collapse>
 							<Nav className="nav-bar__items-right">
-								<Nav.Link href="#" className='nav-bar__items-right-a'><i className="bi bi-heart" style={{ display: 'inline-flex', fontSize: '20px', color: '#2F3035'}}></i></Nav.Link>
-								<Nav.Link href="#" className='nav-bar__items-right-a'><i className="bi bi-person-fill" style={{ display: 'inline-flex', fontSize: '24px', color: '#2F3035'}}></i></Nav.Link>
-								<Nav.Link href="#" className='nav-bar__items-right-a'><i className="bi bi-cart2" style={{ display: 'inline-flex', fontSize: '22px', color: '#2F3035'}}></i></Nav.Link>
+								<Nav.Link href="#" className='nav-bar__items-right-a'><i className="bi bi-heart" style={{ display: 'inline-flex', fontSize: '20px', color: '#2F3035' }}></i></Nav.Link>
+								<Nav.Link href="#" className='nav-bar__items-right-a'><i className="bi bi-person-fill" style={{ display: 'inline-flex', fontSize: '24px', color: '#2F3035' }}></i></Nav.Link>
+								<Nav.Link href="#" className='nav-bar__items-right-a'><i className="bi bi-cart2" style={{ display: 'inline-flex', fontSize: '22px', color: '#2F3035' }}></i></Nav.Link>
 							</Nav>
 						</Container>
 					</Navbar>
@@ -75,7 +75,7 @@ class MenuBurger extends React.Component {
 				</div>
 			)
 		} else {
-			return(
+			return (
 				<div className='nav-bar-phone containerM'>
 					<div className='nav-bar-phone__burger'>
 						<Navbar collapseOnSelect expand={false} onToggle={this.listenerToggle}>
@@ -84,13 +84,13 @@ class MenuBurger extends React.Component {
 								<Navbar.Brand className='nav-bar-phone__items-brand'><Link to="/home">DRIVE MOTO</Link></Navbar.Brand>
 								<Navbar.Collapse id="responsive-navbar-nav">
 									<Nav>
-										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-person-fill" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Войти</Nav.Link>
-										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-person-fill" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Регистрация</Nav.Link>
-										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-heart" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Избранное</Nav.Link>
-										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-cart2" style={{ display: 'inline-flex', paddingRight: '23px',fontSize: '17px', color: '#2F3035'}}></i>Корзина</Nav.Link>
-										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-house-door"  style={{ display: 'inline-flex', paddingRight: '23px',fontSize: '17px', color: '#2F3035'}}></i>Магазины</Nav.Link>
-										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-percent" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Акции</Nav.Link>
-										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-box2" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035'}}></i>Доставка и оплата</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-person-fill" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035' }}></i>Войти</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-person-fill" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035' }}></i>Регистрация</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-heart" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035' }}></i>Избранное</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-cart2" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035' }}></i>Корзина</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-house-door" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035' }}></i>Магазины</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-percent" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035' }}></i>Акции</Nav.Link>
+										<Nav.Link className='nav-bar-phone__items-a' href="#"><i className="bi bi-box2" style={{ display: 'inline-flex', paddingRight: '23px', fontSize: '17px', color: '#2F3035' }}></i>Доставка и оплата</Nav.Link>
 										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Квадроциклы</Nav.Link>
 										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Катера</Nav.Link>
 										<Nav.Link className='nav-bar-phone__navproducts-items nav-bar-phone__navproducts-items-active' href="#"><Link to="/jetSkisPage">Гидроциклы</Link></Nav.Link>
@@ -100,22 +100,22 @@ class MenuBurger extends React.Component {
 										<Nav.Link className='nav-bar-phone__navproducts-items' href="#">Запчасти</Nav.Link>
 									</Nav>
 									<Nav className='nav-bar-phone__items-adress'>
-										<Nav.Link href="#"><i className="bi bi-geo-alt" style={{ display: 'inline-flex', fontSize: '30px', color: '#2F3035'}}></i>Город,  ул. Адрес  25</Nav.Link>
+										<Nav.Link href="#"><i className="bi bi-geo-alt" style={{ display: 'inline-flex', fontSize: '30px', color: '#2F3035' }}></i>Город,  ул. Адрес  25</Nav.Link>
 									</Nav>
 								</Navbar.Collapse>
 							</Container>
 						</Navbar>
 					</div>
-					
+
 					<Nav className="nav-bar-phone__items-right">
-						<Nav.Link href="#" className='nav-bar-phone__items-right-a' ><i className="bi bi-heart " style={{ fontSize: '20px', color: '#2F3035'}}></i></Nav.Link>
-						<Nav.Link href="#" className='nav-bar-phone__items-right-a'><i className="bi bi-person-fill " style={{ fontSize: '24px', color: '#2F3035'}}></i></Nav.Link>
-						<Nav.Link href="#" className='nav-bar-phone__items-right-a'><i className="bi bi-cart2 " style={{ fontSize: '22px', color: '#2F3035'}}></i></Nav.Link>
+						<Nav.Link href="#" className='nav-bar-phone__items-right-a' ><i className="bi bi-heart " style={{ fontSize: '20px', color: '#2F3035' }}></i></Nav.Link>
+						<Nav.Link href="#" className='nav-bar-phone__items-right-a'><i className="bi bi-person-fill " style={{ fontSize: '24px', color: '#2F3035' }}></i></Nav.Link>
+						<Nav.Link href="#" className='nav-bar-phone__items-right-a'><i className="bi bi-cart2 " style={{ fontSize: '22px', color: '#2F3035' }}></i></Nav.Link>
 					</Nav>
 				</div>
 			)
 		}
-		
+
 	}
 }
 

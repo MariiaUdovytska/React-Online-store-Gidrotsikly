@@ -1,20 +1,20 @@
 import React from 'react';
 import './css/searchByCategory.css';
-import {Form} from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 import BasicSearchOptions from './BasicSearchOptions';
 
 
 class SearchByCategory extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state ={labels:[], view:true, collapseOptions:true};
+		this.state = { labels: [], view: true, collapseOptions: true };
 	}
 
-	handleChange = (change) =>{
-		this.setState({labels:change});
+	handleChange = (change) => {
+		this.setState({ labels: change });
 	}
 
-	render(){
+	render() {
 		let arrayDiv = [];
 		for (let index = 0; index < this.state.labels.length; index++) {
 			const element = this.state.labels[index];
@@ -31,7 +31,7 @@ class SearchByCategory extends React.Component {
 							{arrayDiv}
 						</div>
 						<div className='search-by-category__body-common-sorting-right'>
-							<span><i className={((this.state.collapseOptions === true)?'bi bi-chevron-double-down':'bi bi-chevron-double-down rotate')} style={{fontSize:'23px'}} onClick={()=>this.setState({collapseOptions:!this.state.collapseOptions})}></i></span>
+							<span><i className={((this.state.collapseOptions === true) ? 'bi bi-chevron-double-down' : 'bi bi-chevron-double-down rotate')} style={{ fontSize: '23px' }} onClick={() => this.setState({ collapseOptions: !this.state.collapseOptions })}></i></span>
 							<div className='search-by-category__body-common-sorting-right-select'>
 								<Form.Select aria-label="По полулярности">
 									<option>По полулярности</option>
@@ -39,12 +39,12 @@ class SearchByCategory extends React.Component {
 									<option value="2">Сперва акции</option>
 								</Form.Select>
 							</div>
-							<span><i className="bi bi-grid" style={{fontSize:'23px'}} onClick={()=>this.setState({view:true})}></i></span>
-							<span><i className="bi bi-list-task" style={{fontSize:'29px'}} onClick={()=>this.setState({view:false})}></i></span>
+							<span><i className="bi bi-grid" style={{ fontSize: '23px' }} onClick={() => this.setState({ view: true })}></i></span>
+							<span><i className="bi bi-list-task" style={{ fontSize: '29px' }} onClick={() => this.setState({ view: false })}></i></span>
 						</div>
 					</div>
 				</div>
-				<BasicSearchOptions onChange={this.handleChange} view={this.state.view} collapseOptions={this.state.collapseOptions}/>
+				<BasicSearchOptions onChange={this.handleChange} view={this.state.view} collapseOptions={this.state.collapseOptions} />
 			</section>
 		);
 	}
