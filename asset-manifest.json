@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-Online-store-Gidrotsikly/static/css/main.c8953e4d.css",
+    "main.css": "/React-Online-store-Gidrotsikly/static/css/main.7b884f03.css",
     "main.js": "/React-Online-store-Gidrotsikly/static/js/main.a4378705.js",
     "static/js/787.4661cb12.chunk.js": "/React-Online-store-Gidrotsikly/static/js/787.4661cb12.chunk.js",
     "static/media/SFProDisplay-Thin.ttf": "/React-Online-store-Gidrotsikly/static/media/SFProDisplay-Thin.67a7a40b81cceb5f3374.ttf",
@@ -24,12 +24,12 @@
     "static/media/youtube.svg": "/React-Online-store-Gidrotsikly/static/media/youtube.dfe0e82742fec63afb3da876441d915d.svg",
     "index.html": "/React-Online-store-Gidrotsikly/index.html",
     "static/media/facebook.svg": "/React-Online-store-Gidrotsikly/static/media/facebook.09e0003383e87fe911d6832a9446a90f.svg",
-    "main.c8953e4d.css.map": "/React-Online-store-Gidrotsikly/static/css/main.c8953e4d.css.map",
+    "main.7b884f03.css.map": "/React-Online-store-Gidrotsikly/static/css/main.7b884f03.css.map",
     "main.a4378705.js.map": "/React-Online-store-Gidrotsikly/static/js/main.a4378705.js.map",
     "787.4661cb12.chunk.js.map": "/React-Online-store-Gidrotsikly/static/js/787.4661cb12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8953e4d.css",
+    "static/css/main.7b884f03.css",
     "static/js/main.a4378705.js"
   ]
 }
